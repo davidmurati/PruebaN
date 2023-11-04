@@ -58,7 +58,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ebebeb;
+    background-color: #6e1a6e;
   }
   a{
     color: #747bff;
