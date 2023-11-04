@@ -25,7 +25,7 @@ function Login() {
         console.log(result)
         
         if (result.error==null) {
-        window.location.href = '/Home';
+        window.location.href = '/qwdjaoeascaosdfaadfjaenfladnfkjandfkanfadjasdnjflankdanfkldasnfjdlasascaeqsk';
         }
       
 
