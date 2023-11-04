@@ -3,15 +3,18 @@ import "./Home.css";
 import logoN from '../Login/logoN.png'; 
 import Select from 'react-select'
 
-
+import { createClient } from '@supabase/supabase-js'
 
 
 const Home = () => {
+
 
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
 const [option, setOption] = useState('');
 
+const supabase = createClient(import.meta.env.VITE_APP_SUPABASE_URL, 
+    import.meta.env.VITE_APP_SUPABASE_ANON_KEY);
 
 const options = [
     { value: 'You', label: 'You' },
@@ -65,10 +68,15 @@ const options = [
   };
 
   useEffect(() => {
-
-    
-       
-    }, []);
+    supabase.auth.onAuthStateChange((_event, session) => {
+      if (!session) {
+        window.location.href = "/";
+        
+      } else {
+        
+      }
+    });
+  }, []);
 
      // sacar dato del selector para enviarlo con el boton que es la otra funcion 
     const find = ({ value }) => {

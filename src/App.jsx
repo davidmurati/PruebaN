@@ -1,24 +1,32 @@
-import { useState } from 'react'
+import { useState, useEffect  } from 'react'
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch  } from "react-router-dom";
 import Login from "./Component/Login/Login";
 import Home from "./Component/Home/Home";
 
+import { createClient } from '@supabase/supabase-js'
 
 function App() {
 
+
+  const supabase = createClient(import.meta.env.VITE_APP_SUPABASE_URL, 
+    import.meta.env.VITE_APP_SUPABASE_ANON_KEY);
+
+  
   return (
+    <div className="container">
     <Router>
-      <Switch>
+     <Switch>
         <Route exact path="/">
           <Login />
         </Route>
         <Route exact path="/qwdjaoeascaosdfaadfjaenfladnfkjandfkanfadjasdnjflankdanfkldasnfjdlasascaeqsk">
           <Home />
         </Route>
-      </Switch>
-    </Router>
+     </Switch>
+     </Router>
+    </div>
   )
 }
 
