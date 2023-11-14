@@ -25,8 +25,8 @@ const options = [
     { value: 'CodeLlama', label: 'CodeLlama' },
     { value: 'ChatPDF', label: 'ChatPDF' },
     { value: 'GPT', label: 'GPT' },
-    { value: 'ChatPDF2', label: 'ChatPDF2',
-    value: 'GPTnbx', label: 'GPTnbx',
+    { value: 'ChatPDF2', label: 'ChatPDF2'},
+    {value: 'GPTnbx', label: 'GPTnbx' ,
    }
   ]
 
