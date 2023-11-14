@@ -25,7 +25,9 @@ const options = [
     { value: 'CodeLlama', label: 'CodeLlama' },
     { value: 'ChatPDF', label: 'ChatPDF' },
     { value: 'GPT', label: 'GPT' },
-    { value: 'GPTnbx', label: 'GPTnbx' }
+    { value: 'ChatPDF2', label: 'ChatPDF2',
+    value: 'GPTnbx', label: 'GPTnbx',
+   }
   ]
 
 
@@ -56,8 +58,11 @@ const options = [
       }else if (option==="GPT") {
         window.location.href = 'https://gpt.h2o.ai/?hp=chat&utm_source=h2o.ai&utm_medium=referral&utm_campaign=h2o-home-page-plg&_ga=2.2391152.1734232450.1694226193-377963146.1693494970';
          
+      }else if (option==="ChatPDF2") {
+        window.location.href = 'https://chatwithpdf.ai/';
+
       }else if (option==="GPTnbx") {
-        window.location.href = 'https://chat.nbox.ai/';
+          window.location.href = 'https://chat.nbox.ai/';
          
       }else {
         contador=o;
