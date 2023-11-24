@@ -98,7 +98,7 @@ const options = [
      
 
     <div className="card3">
-        <h1>IA sin necesidad de VPN</h1>
+        <h2>IA sin necesidad de VPN</h2>
         
         </div>
 

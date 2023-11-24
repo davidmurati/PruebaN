@@ -17,8 +17,6 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
     
   }
   
@@ -27,38 +25,25 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    width: 100%;
-    min-width: 300px;
+    width: 20%;
+    min-width: 200px;
     justify-content: center;
   }
+
+  .App-logo{
+
+    width: auto;
+    height: auto;
+    
+
+  }
+
 
 
   
   /* Logo styles */
-  .App-logo {
-    height: auto;
-    width: auto;
-    
-    
-    
-    
-  }
 
-  /* Logo styles */
-  .App-logo2 {
-    height: 100%;
-    width: 100%;
-    
-  }
 
-  .App-logo1 {
-    width: 150px;
-    max-width: 200px;
-    height: 150px;
-    max-height: 200px;
-    margin-bottom: 10px;
-    
-  }
   
   /* Main styles */
   main {
@@ -88,7 +73,6 @@ body {
   .card {
     width: auto;
     height: auto;
-    padding: 20px;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -109,7 +93,6 @@ body {
     width: auto;
     height: auto;
     text-align: left;
-    margin: 20px;
     background-color: #773e77;
     margin-left: 20px;
   }
