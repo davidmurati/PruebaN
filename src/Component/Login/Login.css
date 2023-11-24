@@ -1,59 +1,54 @@
 /* General styles */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: flex;
-   
-    margin: 0;
-    padding: 0;
-    background-color: #f3f3f3; /* Agrega el color de fondo */
-    
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: flex;
+ 
+  margin: 0;
+  padding: 0;
+  background-color: #6e1a6e; /* Agrega el color de fondo */
   
-  /* Form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1000px;
-    
-  }
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
   
-  /* Logo container styles */
-  .logo-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 20%;
-    min-width: 200px;
-    justify-content: center;
-  }
+}
 
-  .App-logo{
-
-    width: auto;
-    height: auto;
-    
-
-  }
+/* Logo container styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 100%;
+  min-width: 200px;
+}
 
 
 
+/* Logo styles */
+.App-logo {
+  height: auto;
+  width: auto;
   
-  /* Logo styles */
-
-
   
-  /* Main styles */
-  main {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
+}
+
+/* Main styles */
+main {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
   /* Button styles */
   button[type="submit"] {
     background-color: #4CAF50;
