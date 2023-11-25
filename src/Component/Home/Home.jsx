@@ -118,17 +118,18 @@ const options = [
 
             <div className="card">
             
-            <h3>{"Selecciona la plataforma con la que quieres consultar"}</h3>
+            <h4>{"Selecciona la plataforma con la que quieres consultar"}</h4>
             
 
             <div className="card6">
+            <h6>{"IA Disponible:"}</h6>
+
             <div className="selector">
-            <h3>{"IA Disponible:"}</h3>
 
             <Select options={options} 
              onChange={(e) => find(e)}/>
-      
-      </div>
+            </div>
+
             </div>
 
             <div className="card5">
@@ -141,7 +142,7 @@ const options = [
 
           <div className="card8">
             
-            <h3>{"Informacion basica de uso"}</h3>
+            <h3>{"Información básica de uso"}</h3>
 
             <div className="card9">
 
@@ -150,7 +151,7 @@ const options = [
             <p>{"‣Seleccione You, perplexity o Bard si desea usar IA para generar información con referencias de internet 🌎"}</p>
             <p>{"‣Seleccione Codellama, GPTnbx o llama 2 para generar texto o solucionar tareas con el uso de IA 🔮"}</p>
             <p>{"‣Cuando ingrese seleccione el modelo llama2, CodeLLama o ChatGPT3.5 segun sea el caso 😎"}</p>
-            <p>{"‣Seleccione chatPDF o chatPDF2 para usar busqueda semantica en textos que suba en dichas plataformas 📝"}</p>
+            <p>{"‣Seleccione chatPDF o chatPDF2 para usar busqueda semantica en sus textos 📝"}</p>
             
             </div>
 
@@ -177,10 +178,10 @@ const options = [
             <div className="card6">
               
             <p>{"‣Estructura sugerida: al hacer la pregunta de un [Rol] [Contexto] [Instrucción] [Datos de entrada] [Indicador de salida]"}</p>
-            <p>{"⚠ No es obligatorio usar todos los items. Solo use los que crea conveniente para resolver su tarea."}</p>
+            <p>{"🟡 No es obligatorio usar todos los items. Solo use los que crea conveniente para resolver su tarea."}</p>
             <p>{"Ejemplo: "}</p>
-            <p>{"Eres un profesor de matemáticas, estas explicándole a niños de 5 grado. Realiza ejercicios de ejemplo de suma aplicando propiedad asociativa."}</p>
-            <p>{"‣Para las tareas que requieran lógica o matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso."}</p>
+            <p>{"Eres un profesor de matemáticas, estas explicándole a niños de quinto grado. Realiza ejercicios de ejemplo de suma aplicando propiedad asociativa."}</p>
+            <p>{"‣Para obtener respuestas que requieran lógica o operaciones matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso."}</p>
             <p>{"‣Para algunas actividades puede dar ejemplos 👨‍🏫 antes de pedir que realice la actividad."}</p>
             <p>{"‣Puede generar tablas 📊 usando GTPnbx."}</p>
             
