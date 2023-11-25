@@ -136,7 +136,7 @@ const options = [
             <button className="boton" type="submit">Enviar</button  >
             </div>
 
-            <p>{"Cada una de las alternativas son organizaciones que pueden cambiar sus políticas de uso. Añadiremos o retiraremos plataforma según sus políticas cambien."}</p>
+            <p>{"Cada una de las alternativas son organizaciones que pueden cambiar sus políticas de uso. Añadiremos o retiraremos plataforma según sus políticas cambien 😊."}</p>
             
           </div>
 
