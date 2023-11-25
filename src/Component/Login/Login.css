@@ -25,17 +25,18 @@ form {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  width: 100%;
-  min-width: 200px;
+  
+  width: flex;
   justify-content: center;
+
 }
 
 
 
 /* Logo styles */
 .App-logo {
-  height: auto;
-  width: auto;
+  height: 50%;
+  width: 50%;
   
   
 }
@@ -165,17 +166,17 @@ main {
   .boton[type="submit"] {
     background-color: #f87325;
     align-items: center;
-    width: 25%;
+    width: 50%;
     height: 20%;
-    justify-content: center;
+    max-width: 200px;
   }
 
   .boton[type="submit"]:hover {
     background-color: #0059b3;
     align-items: center;
-    width: 25%;
+    width: 50%;
     height: 20%;
-    justify-content: center;
+    max-width: 200px;
   }
 
   .selector  {

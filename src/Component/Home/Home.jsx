@@ -2,6 +2,8 @@ import { useState, useEffect  } from 'react'
 import "./Home.css";
 import logoN from '../Login/logoN.png'; 
 import Select from 'react-select'
+import llama2 from './llama2.png';
+import llama3 from './llama3.jpg';
 
 import { createClient } from '@supabase/supabase-js'
 
@@ -121,9 +123,8 @@ const options = [
 
             <div className="card6">
             <div className="selector">
-            <label>
-             IA Disponible:
-            </label>
+            <h3>{"IA Disponible:"}</h3>
+
             <Select options={options} 
              onChange={(e) => find(e)}/>
       
@@ -137,13 +138,66 @@ const options = [
             <p>{"Cada una de las alternativas son organizaciones que pueden cambiar sus políticas de uso. Añadiremos o retiraremos plataforma según sus políticas cambien."}</p>
             
           </div>
+
+          <div className="card8">
+            
+            <h3>{"Informacion basica de uso"}</h3>
+
+            <div className="card9">
+
+            <div className="card6">
+              
+            <p>{"‣Seleccione You, perplexity o Bard si desea usar IA para generar información con referencias de internet 🌎"}</p>
+            <p>{"‣Seleccione Codellama, GPTnbx o llama 2 para generar texto o solucionar tareas con el uso de IA 🔮"}</p>
+            <p>{"‣Cuando ingrese seleccione el modelo llama2, CodeLLama o ChatGPT3.5 segun sea el caso 😎"}</p>
+            <p>{"‣Seleccione chatPDF o chatPDF2 para usar busqueda semantica en textos que suba en dichas plataformas 📝"}</p>
+            
+            </div>
+
+            <div className="logo-container2">
+              <img src={llama3} className="App-logo2" alt="logo" />
+        
+            </div>
+
+            </div>
+          
+          </div>
+
+
+
           </section>
           
 
+            <div className="card8">
+            
+            <h3>{"Trucos para mejorar su interacción con los generadores de texto"}</h3>
 
+            <div className="card9">
+
+            <div className="card6">
+              
+            <p>{"‣Estructura sugerida: al hacer la pregunta de un [Rol] [Contexto] [Instrucción] [Datos de entrada] [Indicador de salida]"}</p>
+            <p>{"⚠ No es obligatorio usar todos los items. Solo use los que crea conveniente para resolver su tarea."}</p>
+            <p>{"Ejemplo: "}</p>
+            <p>{"Eres un profesor de matemáticas, estas explicándole a niños de 5 grado. Realiza ejercicios de ejemplo de suma aplicando propiedad asociativa."}</p>
+            <p>{"‣Para las tareas que requieran lógica o matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso."}</p>
+            <p>{"‣Para algunas actividades puede dar ejemplos 👨‍🏫 antes de pedir que realice la actividad."}</p>
+            <p>{"‣Puede generar tablas 📊 usando GTPnbx."}</p>
+            
+            </div>
+
+            <div className="logo-container2">
+              <img src={llama2} className="App-logo2" alt="logo" />
+        
+            </div>
+
+            </div>
+          
+          </div>
 
     
       </main>
+
       
       </div>
     
