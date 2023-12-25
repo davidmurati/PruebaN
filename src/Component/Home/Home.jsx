@@ -1,9 +1,14 @@
 import { useState, useEffect  } from 'react'
 import "./Home.css";
-import logoN from '../Login/logoN.png'; 
+import logoN from '../Login/neurofy2.png'; 
 import Select from 'react-select'
 import llama2 from './llama2.png';
 import llama3 from './llama3.jpg';
+import llama4 from './llama4.png';
+import llama5 from './llama5.png';
+import EfectoDesencriptarTexto from "../Efectos/EfectoDesencriptarTexto.jsx";
+import Card from "../Card1/cardss.jsx";
+import Card2 from "../Card1/cardss2.jsx";
 
 import { createClient } from '@supabase/supabase-js'
 
@@ -21,13 +26,15 @@ const supabase = createClient(import.meta.env.VITE_APP_SUPABASE_URL,
 const options = [
     { value: 'You', label: 'You' },
     { value: 'Perplexity', label: 'Perplexity' },
-    { value: 'OpenA', label: 'OpenA' },
+    { value: 'Copilot', label: 'Copilot' },
+    { value: 'Gray Matter', label: 'Gray Matter' },
     { value: 'GoogleBar', label: 'GoogleBar' },
     { value: 'Llama2', label: 'Llama2' },
     { value: 'CodeLlama', label: 'CodeLlama' },
     { value: 'ChatPDF', label: 'ChatPDF' },
     { value: 'GPT', label: 'GPT' },
     { value: 'ChatPDF2', label: 'ChatPDF2'},
+    { value: 'OpenA', label: 'OpenA' },
     {value: 'GPTnbx', label: 'GPTnbx' ,
    }
   ]
@@ -41,9 +48,13 @@ const options = [
         
       } else if (option==="Perplexity") {
         window.location.href = 'https://www.perplexity.ai/?q=';
+
+      } else if (option==="Copilot") {
+        window.location.href = 'https://copilot.microsoft.com/';
         
-      }  else if (option==="OpenA") {
-        window.location.href = 'https://open-assistant.io/dashboard';
+        
+      }  else if (option==="Gray Matter") {
+        window.location.href = 'https://front-med3.vercel.app/';
          
       }else if (option==="GoogleBar") {
         window.location.href = 'https://bard.google.com/?hl=es';
@@ -62,6 +73,9 @@ const options = [
          
       }else if (option==="ChatPDF2") {
         window.location.href = 'https://chatwithpdf.ai/';
+
+      }  else if (option==="OpenA") {
+        window.location.href = 'https://open-assistant.io/dashboard';
 
       }else if (option==="GPTnbx") {
           window.location.href = 'https://chat.nbox.ai/';
@@ -92,6 +106,49 @@ const options = [
     setOption(value);
   };
 
+  const TextoSubTitulo = "IA sin necesidad de VPN"
+
+
+  const cards = [
+    {
+      id: 1,
+      title: "Generador de texto",
+      text: "Seleccione Codellama, GPTnbx, Gray Matter o llama 2 para solucionar tareas. Segun sea el caso, cuando ingrese seleccione el modelo llama2, CodeLLama o ChatGPT3.5 😎",
+      image: llama3,
+      
+    },
+    {
+      id: 2,
+      title: "Buscador Web con IA",
+      text: ""+"Seleccione You, perplexity, copilot de microsoft o Bard si desea usar IA para generar información con referencias de internet 🌎",
+      image: llama2,
+      
+    },
+    {
+      id: 3,
+      title: "Busqueda semantica",
+      text: " Seleccione chatPDF o chatPDF2 para usar busqueda semantica en sus textos 📝" ,
+      image: llama4,
+      
+    },
+  ];
+
+  const cards2 = [
+    {
+      id: 1,
+      title: "Trucos para mejorar su interacción con los generadores de texto",
+      text: "Estructura sugerida: al hacer la pregunta de un [Rol] [Contexto] [Instrucción] [Datos de entrada] [Indicador de salida]",
+      text2: "🟡 No es obligatorio usar todos los items. Solo use los que crea conveniente para resolver su tarea.",
+      text3: "Ejemplo: Eres un profesor de matemáticas, estas explicándole a niños de quinto grado. Realiza ejercicios de ejemplo de suma aplicando propiedad asociativa.",
+      text4: "Para obtener respuestas que requieran lógica o operaciones matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso.",
+      text5: "Para algunas actividades puede dar ejemplos 👨‍🏫 antes de pedir que realice la actividad.",
+      text6: "Puede generar tablas 📊 usando GTPnbx.",
+      image: llama5,
+      
+    },
+    
+  ];
+
   
   return (
 
@@ -99,14 +156,21 @@ const options = [
     <div>
      
 
-    <div className="card3">
-        <h2>IA sin necesidad de VPN</h2>
-        
-        </div>
-
 
       <div className="logo-container">
         <img src={logoN} className="App-logo" alt="logo" />
+        
+        </div>
+
+        <div className="card3">
+          <p>
+          <EfectoDesencriptarTexto
+          text={TextoSubTitulo}
+          mleftInicial={700}
+          transitionTime={2}
+          tickCambioletra={500}
+          randCar={null} />
+          </p>
         
         </div>
         
@@ -140,61 +204,27 @@ const options = [
             
           </div>
 
-          <div className="card8">
-            
-            <h3>{"Información básica de uso"}</h3>
-
-            <div className="card9">
-
-            <div className="card6">
-              
-            <p>{"‣Seleccione You, perplexity o Bard si desea usar IA para generar información con referencias de internet 🌎"}</p>
-            <p>{"‣Seleccione Codellama, GPTnbx o llama 2 para generar texto o solucionar tareas con el uso de IA 🔮"}</p>
-            <p>{"‣Cuando ingrese seleccione el modelo llama2, CodeLLama o ChatGPT3.5 segun sea el caso 😎"}</p>
-            <p>{"‣Seleccione chatPDF o chatPDF2 para usar busqueda semantica en sus textos 📝"}</p>
-            
+          <div className="container d-flex justify-content-center align-items-center h-100">
+              <div className="row">
+                {cards.map(({ title, image, text, id }) => (
+                  <div className="col-md-4" key={id}>
+                    <Card imageSource={image} title={title} text={text}  />
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="logo-container2">
-              <img src={llama3} className="App-logo2" alt="logo" />
-        
+            <div className="container d-flex justify-content-center align-items-center h-100">
+              <div className="row">
+                {cards2.map(({ title, image, text, text2, text3, text4, text5, text6, id }) => (
+                  <div className="card1" key={id}>
+                    <Card2 imageSource={image} title={title} text={text} text2={text2} text3={text3} text4={text4} text5={text5} text6={text6}/>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            </div>
-          
-          </div>
-
-
 
           </section>
-          
-
-            <div className="card8">
-            
-            <h3>{"Trucos para mejorar su interacción con los generadores de texto"}</h3>
-
-            <div className="card9">
-
-            <div className="card6">
-              
-            <p>{"‣Estructura sugerida: al hacer la pregunta de un [Rol] [Contexto] [Instrucción] [Datos de entrada] [Indicador de salida]"}</p>
-            <p>{"🟡 No es obligatorio usar todos los items. Solo use los que crea conveniente para resolver su tarea."}</p>
-            <p>{"Ejemplo: "}</p>
-            <p>{"Eres un profesor de matemáticas, estas explicándole a niños de quinto grado. Realiza ejercicios de ejemplo de suma aplicando propiedad asociativa."}</p>
-            <p>{"‣Para obtener respuestas que requieran lógica o operaciones matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso."}</p>
-            <p>{"‣Para algunas actividades puede dar ejemplos 👨‍🏫 antes de pedir que realice la actividad."}</p>
-            <p>{"‣Puede generar tablas 📊 usando GTPnbx."}</p>
-            
-            </div>
-
-            <div className="logo-container2">
-              <img src={llama2} className="App-logo2" alt="logo" />
-        
-            </div>
-
-            </div>
-          
-          </div>
 
     
       </main>

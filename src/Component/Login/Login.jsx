@@ -1,7 +1,8 @@
 import { useState, useEffect  } from 'react'
 import './Login.css';
-import logoN from './logoN.png';
+import logoN from './neurofy2.png';
 import { createClient } from '@supabase/supabase-js'
+import EfectoEscritura from "../Efectos/EfectoEscritura.jsx";
 
 
 
@@ -38,7 +39,7 @@ function Login() {
 
   };
 
-  
+  const TextoSubTitulo = "Correo electrónico:"
 
   return (
     
@@ -58,10 +59,23 @@ function Login() {
       </div>
 
       <div className="card2">
-        <p>{"Introduce tu correo si estas registrado sino puedes acceder comunicate con el administrador"}</p>
+      
+
         <label>
-        Correo electrónico:
+          <p>
+            {"Introduce tu correo si estas registrado sino puedes acceder comunicate con el administrador"}
+          </p>
+          
+        <p>
+        <EfectoEscritura
+        text={TextoSubTitulo}
+        mleftInicial={700}
+        transitionTime={2}
+        tickCambioletra={500}
+        randCar={null} />
+        </p>
         </label>
+
         </div>
         <div className="card2">
         <input  type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
