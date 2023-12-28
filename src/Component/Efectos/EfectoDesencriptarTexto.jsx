@@ -48,7 +48,7 @@ function EfectoDesencriptarTexto({ text, mLeftInicial = 180, transitionTime = 2,
 
     return (
         <div>
-            <p className='encryptClassH2' style={{
+            <h3 className='encryptClassH2' style={{
                 margin: 'auto',
                 marginTop: '50px',
                 marginLeft: `${marginLeft}px`,
@@ -56,7 +56,7 @@ function EfectoDesencriptarTexto({ text, mLeftInicial = 180, transitionTime = 2,
                 color: '#f87325',
                 fontSize: '34px',
                 textAlign: "center",
-            }}>{newText}</p>
+            }}>{newText}</h3>
         </div>
     )
 }
