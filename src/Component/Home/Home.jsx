@@ -3,9 +3,9 @@ import "./Home.css";
 import logoN from '../Login/neurofy2.png'; 
 import Select from 'react-select'
 import llama2 from './llama2.png';
-import llama3 from './llama3.jpg';
-import llama4 from './llama4.png';
-import llama5 from './llama5.png';
+import llama7 from './llama7.jpg';
+import llama12 from './llama12.jpg';
+import llama14 from './llama14.png';
 import EfectoDesencriptarTexto from "../Efectos/EfectoDesencriptarTexto.jsx";
 import Card from "../Card1/cardss.jsx";
 import Card2 from "../Card1/cardss2.jsx";
@@ -114,7 +114,7 @@ const options = [
       id: 1,
       title: "Generador de texto",
       text: "Seleccione Codellama, GPTnbx, Gray Matter o llama 2 para solucionar tareas. Segun sea el caso, cuando ingrese seleccione el modelo llama2, CodeLLama o ChatGPT3.5 😎",
-      image: llama3,
+      image: llama12,
       
     },
     {
@@ -128,7 +128,7 @@ const options = [
       id: 3,
       title: "Busqueda semantica",
       text: " Seleccione chatPDF o chatPDF2 para usar busqueda semantica en sus textos 📝" ,
-      image: llama4,
+      image: llama14,
       
     },
   ];
@@ -143,7 +143,7 @@ const options = [
       text4: "Para obtener respuestas que requieran lógica o operaciones matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso.",
       text5: "Para algunas actividades puede dar ejemplos 👨‍🏫 antes de pedir que realice la actividad.",
       text6: "Puede generar tablas 📊 usando GTPnbx.",
-      image: llama5,
+      image: llama7,
       
     },
     
