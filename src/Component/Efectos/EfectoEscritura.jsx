@@ -52,7 +52,7 @@ function EfectoEscritura({ text, mLeftInicial = 180, transitionTime = 2, randCar
                 
                 marginLeft: `${marginLeft}px`,
                 transition: `margin ${transitionTime}s`,
-                color: 'black',
+                //color: 'black',
                 
             }}>{newText}</p>
         </div>

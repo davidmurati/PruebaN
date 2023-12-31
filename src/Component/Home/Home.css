@@ -7,7 +7,7 @@ body {
    
     margin: 0;
     padding: 0;
-    background-color: #6e1a6e; /* Agrega el color de fondo */
+    background-color: #261c31; /* Agrega el color de fondo */
     
   }
   
@@ -86,7 +86,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: #f2f2f2;
+    background-color: #6e1a6e;
     
     
   }
@@ -97,14 +97,14 @@ body {
     padding: 5px;
     text-align: center;
     margin: 5px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f200;
   }
 
   .card3 {
     width: auto;
     height: auto;
     text-align: left;
-    background-color: #6e1a6e;
+    background-color: #11111100;
     
   }
   
@@ -122,7 +122,7 @@ body {
     width: 50%;
     height: auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f204;
 
     text-align:justify;
     margin-bottom: 20px;
@@ -133,7 +133,7 @@ body {
     width: auto;
     height: auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f200;
 
     text-align:justify;
     margin-bottom: 20px;
@@ -149,6 +149,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-weight: bold;
   }
 
 
@@ -157,22 +158,31 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-size: 40px ;
+    
   }
 
   h4{
     font-size: 20px ;
-    color: #141414;
+    color: #f2f2f2;
     text-align: center;
     text-align: center;
     font-family: 'PT Sans', Verdana, sans-serif;
   }
 
   h6{
-    color: #141414;
+    color: #f2f2f2;
     text-align: center;
     text-align: center;
     font-family: 'PT Sans', Verdana, sans-serif;
     
+  }
+
+  h5{
+    font-size: 20px ;
+    color: #6e1a6e;
+    color: #f88213;
+    font-family: 'PT Sans', Verdana, sans-serif;
+    font-weight: bold;
   }
 
   
@@ -232,15 +242,23 @@ body {
     
     margin-left: 20px;
    
+  }
+
+  .card10 {
     
-  
+    justify-content:left;
+    text-align:left;
+    align-items:flex-start;
+    
+   
   }
 
   .card8 {
     width: auto;
     height: auto;
     padding: 20px;
-    background-color: #141414;
+    
+    background-color: #11111100;
 
     text-align:center;
     justify-content:center;
@@ -259,5 +277,5 @@ body {
   p{
     text-align:justify;
     font-family: 'PT Sans', Verdana, sans-serif;
-    
+    color: #d8d8d8;
   }

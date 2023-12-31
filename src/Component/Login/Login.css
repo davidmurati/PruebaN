@@ -7,7 +7,7 @@ body {
  
   margin: 0;
   padding: 0;
-  background-color: #6e1a6e; /* Agrega el color de fondo */
+  background-color: #261c31; /* Agrega el color de fondo */
   
 }
 
@@ -25,7 +25,8 @@ form {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background-color: #141414;
+ /* background-color: #141414;  viejo negro*/
+  background-color: #202020;
   
   width: flex;
   justify-content: center;
@@ -132,7 +133,7 @@ main {
     width: 50%;
     height: auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f200;
 
     text-align:justify;
     margin-bottom: 20px;
@@ -143,11 +144,20 @@ main {
     width: auto;
     height: auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f200;
 
     text-align:justify;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  .card10 {
+    
+    justify-content:left;
+    text-align:left;
+    align-items:flex-start;
+    
+   
   }
 
 

@@ -56,6 +56,7 @@ function EfectoDesencriptarTexto({ text, mLeftInicial = 180, transitionTime = 2,
                 color: '#f87325',
                 fontSize: '34px',
                 textAlign: "center",
+                
             }}>{newText}</h3>
         </div>
     )
