@@ -6,6 +6,7 @@ import llama2 from './llama2.png';
 import llama7 from './llama7.jpg';
 import llama12 from './llama12.jpg';
 import llama14 from './llama14.png';
+import llama15 from './llama15.jpg';
 import EfectoDesencriptarTexto from "../Efectos/EfectoDesencriptarTexto.jsx";
 import Card from "../Card1/cardss.jsx";
 import Card2 from "../Card1/cardss2.jsx";
@@ -128,7 +129,7 @@ const options = [
       id: 3,
       title: "Busqueda semantica",
       text: " Seleccione chatPDF o chatPDF2 para usar busqueda semantica en sus textos 📝" ,
-      image: llama14,
+      image: llama15,
       
     },
   ];
