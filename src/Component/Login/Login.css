@@ -7,8 +7,8 @@ body {
  
   margin: 0;
   padding: 0;
-  background-color: #261c31; /* Agrega el color de fondo */
-  
+  background-color: #8033af; /* Agrega el color de fondo */
+ 
   
 }
 
@@ -28,7 +28,8 @@ form {
   margin-bottom: 20px;
  /* background-color: #141414; 
   background-color: #202020; viejo negro*/
-  background-color: #261c31;
+  background-color: #8033af;
+
   width: flex;
   justify-content: center;
 
