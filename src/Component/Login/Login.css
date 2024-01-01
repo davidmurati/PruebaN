@@ -9,6 +9,7 @@ body {
   padding: 0;
   background-color: #261c31; /* Agrega el color de fondo */
   
+  
 }
 
 /* Form styles */
@@ -25,24 +26,27 @@ form {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
- /* background-color: #141414;  viejo negro*/
-  background-color: #202020;
-  
+ /* background-color: #141414; 
+  background-color: #202020; viejo negro*/
+  background-color: #261c31;
   width: flex;
   justify-content: center;
 
 }
 
+/*
 .logo-container:hover {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   background-color: #202020;
+  
   box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.2);
   width: flex;
   justify-content: center;
 
 }
+*/
 
 
 
