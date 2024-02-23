@@ -9,7 +9,7 @@ body {
     padding: 0;
     /*background-color: #261c31;  Agrega el color de fondo */
     background-color: #202020;
-    background-color: #8033af;
+    background-color: #895ba7;
   }
   
   /* Form styles */
@@ -208,7 +208,8 @@ body {
   }
 
   .boton[type="submit"]:hover {
-    background-color: #0059b3;
+    
+    background-color: #895ba7;
     align-items: center;
     width: 50%;
     height: 20%;

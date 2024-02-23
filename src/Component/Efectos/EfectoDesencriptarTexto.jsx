@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function EfectoDesencriptarTexto({ text, mLeftInicial = 180, transitionTime = 2, randCar, tickCambioLetra = 150 }) {
     
     const [marginLeft, setMarginLeft] = useState(mLeftInicial ? mLeftInicial : 0)
-    const caracteresRandom = randCar ? randCar : ['_', '_', '_', '_', '_', '_', '_', '_', '*', '*', '*', '*', '*']
+    const caracteresRandom = randCar ? randCar : ['_', '_', '_', '_', '_', '_', '_', '_', '🖍', '🖍', '🖍', '🖍', '🖍']
     const [newText, setNewText] = useState('')
     // Para el randomIntFromInterval
     const min = 0

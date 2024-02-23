@@ -4,7 +4,7 @@ import logoN from '../Login/neurofy2.png';
 import Select from 'react-select'
 import llama2 from './llama2.png';
 import llama7 from './llama7.jpg';
-import llama12 from './llama12.jpg';
+import llama9 from './llama9.jpg';
 import llama17 from './llama17.png';
 import EfectoDesencriptarTexto from "../Efectos/EfectoDesencriptarTexto.jsx";
 import Card from "../Card1/cardss.jsx";
@@ -28,13 +28,11 @@ const options = [
     { value: 'Perplexity', label: 'Perplexity' },
     { value: 'Copilot', label: 'Copilot' },
     { value: 'Gray Matter', label: 'Gray Matter' },
-    { value: 'GoogleBar', label: 'GoogleBar' },
+    { value: 'Gemini', label: 'Gemini' },
     { value: 'Llama2', label: 'Llama2' },
     { value: 'CodeLlama', label: 'CodeLlama' },
     { value: 'ChatPDF', label: 'ChatPDF' },
-    { value: 'GPT', label: 'GPT' },
     { value: 'ChatPDF2', label: 'ChatPDF2'},
-    { value: 'OpenA', label: 'OpenA' },
     {value: 'GPTnbx', label: 'GPTnbx' ,
    }
   ]
@@ -56,7 +54,7 @@ const options = [
       }  else if (option==="Gray Matter") {
         window.location.href = 'https://front-med3.vercel.app/';
          
-      }else if (option==="GoogleBar") {
+      }else if (option==="Gemini") {
         window.location.href = 'https://bard.google.com/?hl=es';
          
       }else if (option==="Llama2") {
@@ -113,21 +111,21 @@ const options = [
     {
       id: 1,
       title: "Generador de texto",
-      text: "Seleccione Codellama, GPTnbx, Gray Matter o llama 2 para solucionar tareas. Segun sea el caso, cuando ingrese seleccione el modelo llama2, CodeLLama o ChatGPT3.5 😎",
-      image: llama12,
+      text: "Dirigete a Codellama, GPTnbx o similares para solucionar tareas. Segun sea el caso, cuando ingrese seleccione el modelo a usar 😎",
+      image: llama9,
       
     },
     {
       id: 2,
       title: "Buscador Web con IA",
-      text: ""+"Seleccione You, perplexity, copilot de microsoft o Bard si desea usar IA para generar información con referencias de internet 🌎",
-      image: llama2,
+      text: ""+"Selecciona You, perplexity, copilot de microsoft o Gemini si desea usar IA para generar información con referencias de internet 🌎",
+      image: llama7,
       
     },
     {
       id: 3,
       title: "Busqueda semantica",
-      text: " Seleccione chatPDF o chatPDF2 para usar busqueda semantica en sus textos 📝" ,
+      text: " Selecciona chatPDF o chatPDF2 para usar busqueda semantica en sus textos (extracción textual) 📝" ,
       image: llama17,
       
     },
@@ -140,10 +138,10 @@ const options = [
       text: "Estructura sugerida: al hacer la pregunta de un [Rol] [Contexto] [Instrucción] [Datos de entrada] [Indicador de salida]",
       text2: "🟡 No es obligatorio usar todos los items. Solo use los que crea conveniente para resolver su tarea.",
       text3: "Ejemplo: Eres un profesor de matemáticas, estas explicándole a niños de quinto grado. Realiza ejercicios de ejemplo de suma aplicando propiedad asociativa.",
-      text4: "Para obtener respuestas que requieran lógica o operaciones matemática puede mejorar la salida si pida que respire profundo 🧘‍♀️ y que lo haga paso a paso.",
+      text4: "Para mejorar la calidad de la salida pida que respire profundo 🧘‍♀️, que lo haga paso a paso o ofrezca una propina si hace bien el trabajo.",
       text5: "Para algunas actividades puede dar ejemplos 👨‍🏫 antes de pedir que realice la actividad.",
       text6: "Puede generar tablas 📊 usando GTPnbx.",
-      image: llama7,
+      
       
     },
     
@@ -217,10 +215,10 @@ const options = [
             </div>
 
             <div className="container d-flex justify-content-center align-items-center h-100">
-              <div className="row">
-                {cards2.map(({ title, image, text, text2, text3, text4, text5, text6, id }) => (
+              <div className="col-md-9">
+                {cards2.map(({ title, text, text2, text3, text4, text5, text6, id }) => (
                   <div className="card1" key={id}>
-                    <Card2 imageSource={image} title={title} text={text} text2={text2} text3={text3} text4={text4} text5={text5} text6={text6}/>
+                    <Card2 title={title} text={text} text2={text2} text3={text3} text4={text4} text5={text5} text6={text6}/>
                   </div>
                 ))}
               </div>

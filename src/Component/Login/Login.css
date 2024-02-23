@@ -7,7 +7,7 @@ body {
  
   margin: 0;
   padding: 0;
-  background-color: #8033af; /* Agrega el color de fondo */
+  background-color: #895ba7; /* Agrega el color de fondo */
  
   
 }
@@ -28,8 +28,9 @@ form {
   margin-bottom: 20px;
  /* background-color: #141414; 
   background-color: #202020; viejo negro*/
-  background-color: #8033af;
-
+ /* background-color: #8033af;*/
+  background-color: #f2f2f2;
+  
   width: flex;
   justify-content: center;
 
@@ -113,14 +114,14 @@ main {
     padding: 5px;
     text-align: center;
     margin: 5px;
-    background-color: #773e77;
+    background-color: #895ba7;
   }
 
   .card3 {
     width: auto;
     height: auto;
     text-align: left;
-    background-color: #773e77;
+    background-color: #895ba7;
  
   }
   
@@ -212,6 +213,7 @@ main {
 
   .boton[type="submit"]:hover {
     background-color: #0059b3;
+    background-color: #895ba7;
     align-items: center;
     width: 50%;
     height: 20%;
