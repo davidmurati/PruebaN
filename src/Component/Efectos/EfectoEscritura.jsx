@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function EfectoEscritura({ text, mLeftInicial = 180, transitionTime = 2, randCar, tickCambioLetra = 150 }) {
     
     const [marginLeft, setMarginLeft] = useState(mLeftInicial ? mLeftInicial : 0)
-    const caracteresRandom = randCar ? randCar : ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#']
+    const caracteresRandom = randCar ? randCar : ['🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊', '🖊']
     const [newText, setNewText] = useState('')
     // Para el randomIntFromInterval
     const min = 0
