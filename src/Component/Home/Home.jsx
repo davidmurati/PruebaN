@@ -104,7 +104,7 @@ const options = [
     setOption(value);
   };
 
-  const TextoSubTitulo = "IA SIN NECESIDAD DE VPN"
+  const TextoSubTitulo = "DE VPN"
 
 
   const cards = [
@@ -163,6 +163,7 @@ const options = [
         </div>
 
         <div className="card3">
+        <h3> IA SIN NECESIDAD</h3>
           <p>
           <EfectoDesencriptarTexto
           text={TextoSubTitulo}

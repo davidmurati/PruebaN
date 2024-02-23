@@ -149,6 +149,7 @@ body {
   h3{
     
     color: #f2f2f2;
+    color: #f88213;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Tahoma', Geneva, Verdana, sans-serif;
@@ -208,7 +209,6 @@ body {
   }
 
   .boton[type="submit"]:hover {
-    
     background-color: #895ba7;
     align-items: center;
     width: 50%;
