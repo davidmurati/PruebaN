@@ -83,6 +83,8 @@ const options = [
         alert("No selecciono ninguna de las alternativas");
       }
 
+      
+
 
   };
 
@@ -148,6 +150,7 @@ const options = [
   ];
 
   
+  
   return (
 
     <form onSubmit={handleSubmit}>
@@ -202,7 +205,17 @@ const options = [
             </div>
 
             <p>{"Cada una de las alternativas son organizaciones que pueden cambiar sus políticas de uso. Añadiremos o retiraremos plataforma según sus políticas cambien."}</p>
+            <p>{"Herramientas adicionales: "}</p>
             
+            <p>
+            <a href="https://llava.hliu.cc/" target="_blank" rel="noopener noreferrer">Imagen a Texto (LLAVA)</a>
+            </p>
+            <p>
+            <a href="https://app.leonardo.ai/" target="_blank" rel="noopener noreferrer">Generador de imagen (Leonardo)</a>
+            </p>
+            
+            
+
           </div>
 
           <div className="container d-flex justify-content-center align-items-center h-100">
@@ -225,6 +238,10 @@ const options = [
               </div>
             </div>
 
+            <p>
+            <a href="https://www.camel-ai.org/agent" target="_blank" rel="noopener noreferrer">.</a>
+            </p>
+
           </section>
 
     
@@ -232,8 +249,10 @@ const options = [
 
       
       </div>
+      
     
     </form>
+    
   );
 };
 
