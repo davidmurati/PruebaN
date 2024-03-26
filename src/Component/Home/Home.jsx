@@ -213,6 +213,9 @@ const options = [
             <p>
             <a href="https://app.leonardo.ai/" target="_blank" rel="noopener noreferrer">Generador de imagen (Leonardo)</a>
             </p>
+            <p>
+            <a href="https://ideogram.ai/t/explore" target="_blank" rel="noopener noreferrer">Generador de imagen con texto (ideogram)</a>
+            </p>
             
             
 
