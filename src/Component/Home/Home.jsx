@@ -33,6 +33,7 @@ const options = [
     { value: 'CodeLlama', label: 'CodeLlama' },
     { value: 'ChatPDF', label: 'ChatPDF' },
     { value: 'ChatPDF2', label: 'ChatPDF2'},
+    { value: 'Inflection', label: 'Inflection'},
     {value: 'GPTnbx', label: 'GPTnbx' ,
    }
   ]
@@ -78,7 +79,10 @@ const options = [
       }else if (option==="GPTnbx") {
           window.location.href = 'https://chat.nbox.ai/';
          
-      }else {
+      }else if (option==="Inflection") {
+        window.location.href = 'https://pi.ai/discover';
+       
+    }else {
         contador=o;
         alert("No selecciono ninguna de las alternativas");
       }
