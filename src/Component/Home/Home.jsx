@@ -27,7 +27,7 @@ const options = [
     { value: 'You', label: 'You' },
     { value: 'Perplexity', label: 'Perplexity' },
     { value: 'Copilot', label: 'Copilot' },
-    { value: 'Gray Matter', label: 'Gray Matter' },
+    { value: 'Mistral', label: 'Mistral' },
     { value: 'Gemini', label: 'Gemini' },
     { value: 'Llama2', label: 'Llama2' },
     { value: 'CodeLlama', label: 'CodeLlama' },
@@ -52,8 +52,8 @@ const options = [
         window.location.href = 'https://copilot.microsoft.com/';
         
         
-      }  else if (option==="Gray Matter") {
-        window.location.href = 'https://front-med3.vercel.app/';
+      }  else if (option==="Mistral") {
+        window.location.href = 'https://chat.mistral.ai/chat';
          
       }else if (option==="Gemini") {
         window.location.href = 'https://bard.google.com/?hl=es';
