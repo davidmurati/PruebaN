@@ -35,7 +35,7 @@ const options = [
     { value: 'ChatPDF2', label: 'ChatPDF2'},
     { value: 'Inflection', label: 'Inflection'},
     {value: 'GPTnbx', label: 'GPTnbx' },
-    {value: 'Gemini1.5', label: 'Gemini1.5' ,
+    {value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5' ,
    }
   ]
 
@@ -83,7 +83,7 @@ const options = [
       }else if (option==="Inflection") {
         window.location.href = 'https://pi.ai/discover';
 
-      }else if (option==="Gemini1.5") {
+      }else if (option==="Gemini1.5 (solo PC)") {
         window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
        
     }else {
@@ -223,6 +223,9 @@ const options = [
             </p>
             <p>
             <a href="https://ideogram.ai/t/explore" target="_blank" rel="noopener noreferrer">Generador de imagen con texto (Ideogram)</a>
+            </p>
+            <p>
+            <a href="https://www.udio.com/" target="_blank" rel="noopener noreferrer">Generador de musica (Udio)</a>
             </p>
             
             
