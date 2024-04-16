@@ -35,7 +35,7 @@ const options = [
     { value: 'ChatPDF2', label: 'ChatPDF2'},
     { value: 'Inflection', label: 'Inflection'},
     {value: 'GPTnbx', label: 'GPTnbx' },
-    {value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5' ,
+    {value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5 (solo PC)' ,
    }
   ]
 
