@@ -34,7 +34,8 @@ const options = [
     { value: 'ChatPDF', label: 'ChatPDF' },
     { value: 'ChatPDF2', label: 'ChatPDF2'},
     { value: 'Inflection', label: 'Inflection'},
-    {value: 'GPTnbx', label: 'GPTnbx' ,
+    {value: 'GPTnbx', label: 'GPTnbx' },
+    {value: 'Gemini1.5', label: 'Gemini1.5' ,
    }
   ]
 
@@ -81,6 +82,9 @@ const options = [
          
       }else if (option==="Inflection") {
         window.location.href = 'https://pi.ai/discover';
+
+      }else if (option==="Gemini1.5") {
+        window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
        
     }else {
         contador=o;
