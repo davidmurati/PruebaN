@@ -29,7 +29,7 @@ const options = [
     { value: 'Copilot', label: 'Copilot' },
     { value: 'Mistral', label: 'Mistral' },
     { value: 'Gemini', label: 'Gemini' },
-    { value: 'Llama2', label: 'Llama2' },
+    { value: 'Llama3', label: 'Llama3' },
     { value: 'CodeLlama', label: 'CodeLlama' },
     { value: 'ChatPDF', label: 'ChatPDF' },
     { value: 'ChatPDF2', label: 'ChatPDF2'},
@@ -59,8 +59,9 @@ const options = [
       }else if (option==="Gemini") {
         window.location.href = 'https://bard.google.com/?hl=es';
          
-      }else if (option==="Llama2") {
-        window.location.href = 'https://www.llama2.ai/';
+      }else if (option==="Llama3") {
+        "window.location.href = 'https://www.llama2.ai/';"
+        window.location.href = 'https://groq.com/';
          
       }else if (option==="CodeLlama") {
         window.location.href = 'https://labs.perplexity.ai/';
