@@ -19,7 +19,7 @@ function App() {
     <Router>
      <Switch>
         <Route exact path="/">
-          <Login />
+          <Home />
         </Route>
         <Route exact path="/Neurofy-app">
           <Home />
