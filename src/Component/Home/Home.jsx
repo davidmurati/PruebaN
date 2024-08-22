@@ -37,6 +37,7 @@ const Home = () => {
 
     const linkOptions = [
         { value: 'Leonardo', label: 'Generador de imagen (Leonardo)', url: 'https://app.leonardo.ai/' },
+        { value: 'Leonardo', label: 'Generador de imagen (Flux)', url: 'https://flux1.org/' },
         { value: 'Ideogram', label: 'Generador de imagen con texto (Ideogram)', url: 'https://ideogram.ai/t/explore' },
         { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' },
         { value: 'Suno', label: 'Generador de música (Suno)', url: 'https://suno.com/' }
