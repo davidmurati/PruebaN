@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-function EfectoDesencriptarTexto({ text, mLeftInicial = 180, transitionTime = 2, randCar, tickCambioLetra = 150 }) {
+function EfectoDesencriptarTexto({ text, mLeftInicial = 180, transitionTime = 200, randCar, tickCambioLetra = 150 }) {
     
     const [marginLeft, setMarginLeft] = useState(mLeftInicial ? mLeftInicial : 0)
-    const caracteresRandom = randCar ? randCar : ['❕', '💭', '.', '🗨', '.', '💬', '.', '.', '❔', '🗯', '❔', '💭', '❕']
+    const caracteresRandom = randCar ? randCar : ['01', '00', '11', '10', '00', '11', '10', '01', '00', '11', '10', '01', '11']
     const [newText, setNewText] = useState('')
     // Para el randomIntFromInterval
     const min = 0
