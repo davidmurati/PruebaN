@@ -34,10 +34,10 @@ const Home = () => {
     ];
 
     const linkOptions = [
-        { value: 'LLAVA', label: 'Imagen a Texto (LLAVA)', url: 'https://llava.hliu.cc/' },
         { value: 'Leonardo', label: 'Generador de imagen (Leonardo)', url: 'https://app.leonardo.ai/' },
         { value: 'Ideogram', label: 'Generador de imagen con texto (Ideogram)', url: 'https://ideogram.ai/t/explore' },
-        { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' }
+        { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' },
+        { value: 'Suno', label: 'Generador de música (Suno)', url: 'https://suno.com/' }
     ];
 
     useEffect(() => {
@@ -48,15 +48,60 @@ const Home = () => {
         });
     }, []);
 
+    
+
     const handleSubmit = async (event) => {
-        event.preventDefault();
-        const selectedOption = options.find(opt => opt.value === option);
-        if (selectedOption) {
-            window.location.href = selectedOption.url;
-        } else {
-            alert("No seleccionaste ninguna de las alternativas");
+      event.preventDefault();
+  
+      if (option==="You") {
+          window.location.href = 'https://you.com/search?q=';
+          
+        } else if (option==="Perplexity") {
+          window.location.href = 'https://www.perplexity.ai/?q=';
+  
+        } else if (option==="Copilot") {
+          window.location.href = 'https://copilot.microsoft.com/';
+          
+          
+        }  else if (option==="Mistral") {
+          window.location.href = 'https://chat.mistral.ai/chat';
+           
+        }else if (option==="Gemini") {
+          window.location.href = 'https://bard.google.com/?hl=es';
+           
+        }else if (option==="Llama3") {
+          "window.location.href = 'https://www.llama2.ai/';"
+          window.location.href = 'https://groq.com/';
+           
+        }else if (option==="CodeLlama") {
+          window.location.href = 'https://labs.perplexity.ai/';
+           
+        }else if (option==="ChatPDF") {
+          window.location.href = 'https://chatwithpdf.ai/';
+           
+        }else if (option==="GPT") {
+          window.location.href = 'https://gpt.h2o.ai/?hp=chat&utm_source=h2o.ai&utm_medium=referral&utm_campaign=h2o-home-page-plg&_ga=2.2391152.1734232450.1694226193-377963146.1693494970';
+           
+        }else if (option==="ChatPDF2") {
+          window.location.href = 'https://chatwithpdf.ai/';
+  
+        }  else if (option==="OpenA") {
+          window.location.href = 'https://open-assistant.io/dashboard';
+  
+        }else if (option==="GPTnbx") {
+            window.location.href = 'https://chat.nbox.ai/';
+           
+        }else if (option==="Inflection") {
+          window.location.href = 'https://pi.ai/discover';
+  
+        }else if (option==="Gemini1.5 (solo PC)") {
+          window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
+         
+      }else {
+          contador=o;
+          alert("No selecciono ninguna de las alternativas");
         }
-    };
+      };
 
     const handleLinkChange = (selectedLink) => {
         setLinkOption(selectedLink);
