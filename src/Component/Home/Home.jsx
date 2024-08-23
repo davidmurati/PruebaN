@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import noticia1 from './duckduckgo2.png';
 import noticia2 from './removebg.jpeg';
 import noticia3 from './claude.jpeg';
+import noticia4 from './pezargento.jpeg';
 import llama7 from './llama7.jpg';
 import llama9 from './matrix4.jpeg';
 import llama17 from './matrix5.jpeg';
@@ -39,6 +40,7 @@ const Home = () => {
         { value: 'Leonardo', label: 'Generador de imagen (Leonardo)', url: 'https://app.leonardo.ai/' },
         { value: 'Leonardo', label: 'Generador de imagen (Flux)', url: 'https://flux1.org/' },
         { value: 'Ideogram', label: 'Generador de imagen con texto (Ideogram)', url: 'https://ideogram.ai/t/explore' },
+        { value: 'character', label: 'Chat con personajes IA (character.ai)', url: 'https://character.ai/' },
         { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' },
         { value: 'Suno', label: 'Generador de música (Suno)', url: 'https://suno.com/' }
     ];
@@ -156,17 +158,30 @@ const Home = () => {
       },
       {
           id: 2,
-          title: "Recomendación para tratar imagenes",
+          title: "Recomendación para tratar imágenes",
           text: "Quieres mejorar la resolución de tus imágenes busca pixelcut.ai la cual te ayuda a aumentar la resolución en segundos y si lo que quieres es quitar el fondo usa remove.bg",
           image: noticia2,
       },
       {
           id: 3,
           title: "Artifacts de Claude",
-          text: "Artifacts de Claude permite generar programas con tan solo una descripción. Para ingresar tienes que hacer uso de buscadores como el de Duck Duck Go o usar VPN seguras. Es una herramienta muy útil si necesitas un programa rápido que haga una tarea especifica. ",
+          text: "Artifacts de Claude permite generar programas con tan solo una descripción. Para ingresar tienes que hacer uso de buscadores como el de Duck Duck Go o usar VPN seguras. Es una herramienta muy útil si necesitas un programa rápido que haga una tarea específica.",
           image: noticia3,
       },
-    ];
+      {
+          id: 4,
+          title: "Pez Argento en character.ai",
+          text: (
+              <>
+                  ¿Algo te incomoda y quieres hablar? Habla con el Pez Argento, amigo de Coraje. Seguro te dará un gran consejo. Puedes hablar con él en este enlace:{" "}
+                  <a href="https://character.ai/chat/qfT15B9lrHeRHYN0eK0dLKMPwc4d6qLV0AH8yDJh3-A" target="_blank" rel="noopener noreferrer">
+                      Pez Argento en character.ai
+                  </a>.
+              </>
+          ),
+          image: noticia4,
+      },
+  ];
 
     return (
         <div className="home-container">
