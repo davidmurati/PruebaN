@@ -8,13 +8,15 @@ import noticia1 from './duckduckgo2.png';
 import noticia2 from './removebg.jpeg';
 import noticia3 from './claude.jpeg';
 import noticia4 from './pezargento.jpeg';
-import llama7 from './llama7.jpg';
-import llama9 from './matrix4.jpeg';
-import llama17 from './matrix5.jpeg';
+import llama7 from './Neurofy3.png';
+import llama9 from './Neurofy2.png';
+import llama17 from './Neurofy1.png';
 import EfectoDesencriptarTexto from "../Efectos/EfectoDesencriptarTexto.jsx";
 import Card from "../Card1/cardss.jsx";
 import Card2 from "../Card1/cardss2.jsx";
 import { createClient } from '@supabase/supabase-js';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     const [option, setOption] = useState('');
@@ -186,7 +188,8 @@ const Home = () => {
     return (
         <div className="home-container">
             <header className="header">
-                <h5>NEUROFY</h5>
+                <Navbar />
+                
                 <img src={logoN} className="App-logo" alt="logo" />
                 <h3>IA SIN NECESIDAD</h3>
                 <EfectoDesencriptarTexto
@@ -197,8 +200,10 @@ const Home = () => {
                     randCar={null}
                 />
             </header>
-
+            
             <main className="main-content">
+            <section className="section-about" id="Inicio">   
+            
                 <form onSubmit={handleSubmit} className="form">
                     <h4>Selecciona la plataforma con la que quieres consultar</h4>
                     <Select options={options} onChange={(e) => setOption(e.value)} className="select" />
@@ -206,30 +211,39 @@ const Home = () => {
                     <p>Cada una de las alternativas puede cambiar sus políticas de uso.</p>
                     <h6>Herramientas adicionales:</h6>
                     <Select options={linkOptions} onChange={handleLinkChange} className="select" />
+                    
                 </form>
+                
+                </section>
 
+                <section className="section-about" id="TiposIA"> 
                 <h4>Tipos de IA disponibles</h4>
+                
                 <Carousel className="carousel">
                     {cards.map(({ id, title, text, image }) => (
                         <Card key={id} imageSource={image} title={title} text={text} />
                     ))}
                 </Carousel>
+                </section>
 
                 <h4>Mejora tu experiencia</h4>
                 {cards2.map(({ id, title, text, text2, text3, text4, text5, text6 }) => (
                     <Card2 key={id} title={title} text={text} text2={text2} text3={text3} text4={text4} text5={text5} text6={text6} />
                 ))}
 
+                <section className="section-about" id="Noticias"> 
                 <h4>Recursos y noticias</h4>
                 <Carousel className="carousel">
                     {cards3.map(({ id, title, text, image }) => (
                         <Card key={id} imageSource={image} title={title} text={text} />
                     ))}
                 </Carousel>
+                </section>
             </main>
             <p>
             <a href="https://www.camel-ai.org/agent" target="_blank" rel="noopener noreferrer">.</a>
             </p>
+            <Footer />
         </div>
 
     );

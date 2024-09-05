@@ -1,10 +1,20 @@
 .card:hover {
     box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
     transition: all 0.7s linear;
+    
+  }
+
+  .card.text-center.bg-dark.animate_animated.animate_fadelnUp{
+  
+    background-color: #3f3a44;
+    margin: 0px;
+    
   }
   
   .card-body {
     padding: 2rem 0 !important;
+    background-color: #3f3a44;
+    
   }
   
   .card-text {

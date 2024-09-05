@@ -5,7 +5,7 @@ import "./card.css";
 
 function Card2({  title, text, text2, text3, text4, text5, text6 }) {
   return (
-    <div className="card text-center bg-dark animate__animated animate__fadeInUp">
+    <div className="card">
       
       <div className="card-body text-light">
         <h4 className="card-title">{title}</h4>

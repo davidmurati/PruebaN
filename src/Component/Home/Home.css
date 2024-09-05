@@ -1,7 +1,8 @@
 body {
   font-family: 'PT Sans', Verdana, sans-serif;
-  background-color: #202020;
-  color: #0f0f0f;
+  background-color: #ddcaf3;
+  background-color:#202020;
+  color: #eee6f7;
   margin: 20px;
   padding: 0;
   display: flex;
@@ -19,12 +20,13 @@ form {
   align-items: center;
   width: 100%;
   max-width: 1200px;
+  
   padding: 20px;
   box-sizing: border-box;
-  background-color: #282828;
+  background-color: #e2e1e2;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin: 20px;
+  margin-bottom: 10px;
 }
 
 /* Logo container styles */
@@ -38,7 +40,7 @@ form {
 
 /* Logo styles */
 .App-logo {
-  max-width: 200px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   
@@ -87,11 +89,19 @@ button[type="submit"]:hover {
 /* Card styles */
 .card, .card2, .card3, .card4, .card5 {
   
-  background-color: #323232;
+  
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   box-sizing: border-box;
+  background-color: #3f3a44;
+  
+}
+
+.div.card.text-center.bg-dark.animate_animated.animate_fadelnUp{
+  
+  background-color: #3f3a44;
+  margin: 0px;
   
 }
 
@@ -108,6 +118,7 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: flex-start;
   min-width: 300px;
+  max-width: 100px;
   
 }
 
@@ -115,12 +126,12 @@ button[type="submit"]:hover {
 h2, h3, h4, h5, h6 {
   color: #f88213;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 p {
   text-align: justify;
-  color: #e0e0e0;
+  color: #1f1e1e;
   line-height: 1.6;
 }
 
@@ -132,16 +143,30 @@ p {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
+
   .App-logo {
-      max-width: 150px;
+      max-width: 300px;
   }
 
+  
   button[type="submit"] {
-      max-width: 100%;
+    background-color: #f88213;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    max-width: 180px;
+    width: 100%;
+    margin: 20px; /* Añade espacio superior */
+    letter-spacing: 1px; /* Ajusta la distancia entre letras */
   }
 
   .selector .react-select__control {
@@ -157,14 +182,18 @@ p {
   }
 
   form {
-      margin: 0 10px;
+      margin: 0px;
+      margin-bottom: 10px;
+      
   }
+
+   
+
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   .App-logo {
-      max-width: 120px;
-      max-width: 350px;
+      max-width: 250px;
   }
 
   .card, .card2, .card3, .card4, .card5, .carousel {
@@ -178,7 +207,55 @@ p {
   }
 
   form {
-      margin: 0 5px;
+      margin: 0px;
+      margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  button[type="submit"] {
+    background-color: #f88213;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    max-width: 180px;
+    width: 100%;
+    margin: 20px; /* Añade espacio superior */
+    letter-spacing: 1px; /* Ajusta la distancia entre letras */
+  }
+
+  .selector .react-select__control {
+      margin-top: 10px;
+      padding: 5px;
+      max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-logo {
+    max-width: 250px;
+}
+
+  .card, .card2, .card3, .card4, .card5, .carousel {
+      padding: 10px;
+      max-width: 320px;
+  }
+
+  .carousel .slide img {
+      max-height: 150px;
+      max-width: 280px;
+  }
+
+  form {
+    margin: 0px;
+    margin-bottom: 10px;
   }
 
   button[type="submit"] {
@@ -202,8 +279,9 @@ p {
 
   form {
       padding: 10px;
-      margin: 0 5px;
+      margin: 0px;
       max-width: 250px;
+      margin-bottom: 10px;
   }
 
   .card, .card2, .card3, .card4, .card5, .carousel {
