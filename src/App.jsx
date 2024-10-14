@@ -21,9 +21,6 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/Neurofy-app">
-          <Home />
-        </Route>
      </Switch>
      </Router>
     </div>

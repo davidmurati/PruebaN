@@ -2,7 +2,7 @@ body {
   font-family: 'PT Sans', Verdana, sans-serif;
   background-color: #ddcaf3;
   background-color:#202020;
-  color: #eee6f7;
+  color: #202020;
   margin: 20px;
   padding: 0;
   display: flex;
@@ -82,6 +82,7 @@ button[type="submit"]:hover {
   width: 100%;
   max-width: 180px;
   border-radius: 12px;
+  
   
 }
 

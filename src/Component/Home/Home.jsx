@@ -48,11 +48,11 @@ const Home = () => {
     ];
 
     useEffect(() => {
-        supabase.auth.onAuthStateChange((_event, session) => {
+        /* supabase.auth.onAuthStateChange((_event, session) => {
             if (!session) {
                 window.location.href = "/";
             }
-        });
+        });*/
     }, []);
 
     
