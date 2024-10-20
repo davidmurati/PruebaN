@@ -41,7 +41,8 @@ const Home = () => {
     const linkOptions = [
         { value: 'Notebooklm', label: 'Notebooklm (Interactua con tu video o texto)', url: 'https://notebooklm.google.com/' },
         { value: 'Leonardo', label: 'Generador de imagen (Leonardo)', url: 'https://app.leonardo.ai/' },
-        { value: 'Leonardo', label: 'Generador de imagen (Flux)', url: 'https://flux1.org/' },
+        { value: 'Flux', label: 'Generador de imagen (Flux)', url: 'https://flux1.org/' },
+        { value: 'Playground', label: 'Generador de imagen (Playground)', url: 'https://playground.com/' },
         { value: 'Ideogram', label: 'Generador de imagen con texto (Ideogram)', url: 'https://ideogram.ai/t/explore' },
         { value: 'character', label: 'Chat con personajes IA (character.ai)', url: 'https://character.ai/' },
         { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' },
