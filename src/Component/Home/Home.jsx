@@ -8,6 +8,7 @@ import noticia1 from './duckduckgo2.png';
 import noticia2 from './removebg.jpeg';
 import noticia3 from './claude.jpeg';
 import noticia4 from './pezargento.jpeg';
+import noticia5 from './Noticia5.png';
 import llama7 from './Neurofy3.png';
 import llama9 from './Neurofy2.png';
 import llama17 from './Neurofy1.png';
@@ -29,7 +30,7 @@ const Home = () => {
         { value: 'Copilot', label: 'Copilot' },
         { value: 'Mistral', label: 'Mistral' },
         { value: 'Gemini', label: 'Gemini' },
-        { value: 'Llama3', label: 'Llama3' },
+        { value: 'Groq', label: 'Groq' },
         { value: 'CodeLlama', label: 'CodeLlama' },
         { value: 'ChatPDF', label: 'ChatPDF' },
         { value: 'ChatPDF2', label: 'ChatPDF2' },
@@ -47,6 +48,8 @@ const Home = () => {
         { value: 'character', label: 'Chat con personajes IA (character.ai)', url: 'https://character.ai/' },
         { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' },
         { value: 'Suno', label: 'Generador de música (Suno)', url: 'https://suno.com/' },
+        { value: 'Ollama', label: 'Ollama', url: 'https://ollama.com/search' },
+        { value: 'Openrouter', label: 'Openrouter', url: 'https://openrouter.ai/' },
         { value: 'Medlm', label: 'Medlm', url: 'https://www.openevidence.com/' }
     ];
 
@@ -79,9 +82,9 @@ const Home = () => {
         }else if (option==="Gemini") {
           window.location.href = 'https://bard.google.com/?hl=es';
            
-        }else if (option==="Llama3") {
+        }else if (option==="Groq") {
           "window.location.href = 'https://www.llama2.ai/';"
-          window.location.href = 'https://groq.com/';
+          window.location.href = 'https://console.groq.com/playground';
            
         }else if (option==="CodeLlama") {
           window.location.href = 'https://labs.perplexity.ai/';
@@ -103,6 +106,7 @@ const Home = () => {
            
         }else if (option==="Inflection") {
           window.location.href = 'https://pi.ai/discover';
+
   
         }else if (option==="Gemini1.5 (solo PC)") {
           window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
@@ -162,19 +166,32 @@ const Home = () => {
           image: noticia1,
       },
       {
-          id: 2,
+        id: 2,
+        title: "Portal de Noticias de IA",
+        text: (
+            <>
+                Mantente actualizado en los desarrollos, implementaciones, modelos y todo lo que tiene que ver con el mundo del machine learning en el portal deeplearning. En el siguiente enlace:{" "}
+                <a href="https://www.deeplearning.ai/the-batch/" target="_blank" rel="noopener noreferrer">
+                    Noticias IA
+                </a>.
+            </>
+        ),
+        image: noticia5,
+    },
+      {
+          id: 3,
           title: "Recomendación para tratar imágenes",
           text: "Quieres mejorar la resolución de tus imágenes busca pixelcut.ai la cual te ayuda a aumentar la resolución en segundos y si lo que quieres es quitar el fondo usa remove.bg",
           image: noticia2,
       },
       {
-          id: 3,
+          id: 4,
           title: "Artifacts de Claude",
           text: "Artifacts de Claude permite generar programas con tan solo una descripción. Para ingresar tienes que hacer uso de buscadores como el de Duck Duck Go o usar VPN seguras. Es una herramienta muy útil si necesitas un programa rápido que haga una tarea específica.",
           image: noticia3,
       },
       {
-          id: 4,
+          id: 5,
           title: "Pez Argento en character.ai",
           text: (
               <>
