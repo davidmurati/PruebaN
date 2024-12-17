@@ -170,7 +170,7 @@ const Home = () => {
         title: "Portal de Noticias de IA",
         text: (
             <>
-                Mantente actualizado en los desarrollos, implementaciones, modelos y todo lo que tiene que ver con el mundo del machine learning en el portal deeplearning. En el siguiente enlace:{" "}
+                Actualizate en los desarrollos, implementaciones, modelos y todo lo que tiene que ver con el mundo del machine learning en el portal deeplearning.ia que se encuentra en el siguiente enlace:{" "}
                 <a href="https://www.deeplearning.ai/the-batch/" target="_blank" rel="noopener noreferrer">
                     Noticias IA
                 </a>.
