@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import "./Home.css";
-import logoN from '../Login/neurofy2.png'; 
+import logoN from '../Login/neurofy2.png';
 import Select from 'react-select';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -27,6 +27,7 @@ const Home = () => {
     const options = [
         { value: 'You', label: 'You' },
         { value: 'Perplexity', label: 'Perplexity' },
+        { value: 'txyz', label: 'txyz' },
         { value: 'Copilot', label: 'Copilot' },
         { value: 'Mistral', label: 'Mistral' },
         { value: 'Gemini', label: 'Gemini' },
@@ -36,86 +37,87 @@ const Home = () => {
         { value: 'ChatPDF2', label: 'ChatPDF2' },
         { value: 'Inflection', label: 'Inflection' },
         { value: 'GPTnbx', label: 'GPTnbx' },
+        { value: 'deepseek', label: 'deepseek' },
         { value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5 (solo PC)' }
     ];
 
     const linkOptions = [
+        { value: 'labs.google', label: 'Genera imagenes y musica instrumental', url: 'https://labs.google/fx/es' },
         { value: 'Notebooklm', label: 'Notebooklm (Interactua con tu video o texto)', url: 'https://notebooklm.google.com/' },
         { value: 'Leonardo', label: 'Generador de imagen (Leonardo)', url: 'https://app.leonardo.ai/' },
-        { value: 'Flux', label: 'Generador de imagen (Flux)', url: 'https://flux1.org/' },
         { value: 'Playground', label: 'Generador de imagen (Playground)', url: 'https://playground.com/' },
         { value: 'Ideogram', label: 'Generador de imagen con texto (Ideogram)', url: 'https://ideogram.ai/t/explore' },
         { value: 'character', label: 'Chat con personajes IA (character.ai)', url: 'https://character.ai/' },
         { value: 'Udio', label: 'Generador de música (Udio)', url: 'https://www.udio.com/' },
         { value: 'Suno', label: 'Generador de música (Suno)', url: 'https://suno.com/' },
+        { value: 'Elevenlabs', label: 'Generador Voz', url: 'https://elevenlabs.io/' },
         { value: 'Ollama', label: 'Ollama', url: 'https://ollama.com/search' },
         { value: 'Openrouter', label: 'Openrouter', url: 'https://openrouter.ai/' },
         { value: 'Medlm', label: 'Medlm', url: 'https://www.openevidence.com/' }
     ];
 
     useEffect(() => {
-        /* supabase.auth.onAuthStateChange((_event, session) => {
-            if (!session) {
-                window.location.href = "/";
-            }
-        });*/
+        // Lógica de autenticación (si es necesaria)
     }, []);
 
-    
-
     const handleSubmit = async (event) => {
-      event.preventDefault();
+        event.preventDefault();
+    
+        if (option==="You") {
+            window.location.href = 'https://you.com/search?q=';
+            
+          } else if (option==="Perplexity") {
+            window.location.href = 'https://www.perplexity.ai/?q=';
+    
+          } else if (option==="txyz") {
+            window.location.href = 'https://app.txyz.ai/';
+    
+          }else if (option==="Copilot") {
+            window.location.href = 'https://copilot.microsoft.com/';
+            
+            
+          }  else if (option==="Mistral") {
+            window.location.href = 'https://chat.mistral.ai/chat';
+             
+          }else if (option==="Gemini") {
+            window.location.href = 'https://bard.google.com/?hl=es';
+             
+          }else if (option==="Groq") {
+            "window.location.href = 'https://www.llama2.ai/';"
+            window.location.href = 'https://console.groq.com/playground';
+             
+          }else if (option==="CodeLlama") {
+            window.location.href = 'https://labs.perplexity.ai/';
+             
+          }else if (option==="ChatPDF") {
+            window.location.href = 'https://chatwithpdf.ai/';
+             
+          }else if (option==="GPT") {
+            window.location.href = 'https://gpt.h2o.ai/?hp=chat&utm_source=h2o.ai&utm_medium=referral&utm_campaign=h2o-home-page-plg&_ga=2.2391152.1734232450.1694226193-377963146.1693494970';
+             
+          }else if (option==="ChatPDF2") {
+            window.location.href = 'https://chatwithpdf.ai/';
+    
+          }  else if (option==="OpenA") {
+            window.location.href = 'https://open-assistant.io/dashboard';
+    
+          }else if (option==="GPTnbx") {
+              window.location.href = 'https://chat.nbox.ai/';
+             
+          }else if (option==="Inflection") {
+            window.location.href = 'https://pi.ai/discover';
   
-      if (option==="You") {
-          window.location.href = 'https://you.com/search?q=';
-          
-        } else if (option==="Perplexity") {
-          window.location.href = 'https://www.perplexity.ai/?q=';
-  
-        } else if (option==="Copilot") {
-          window.location.href = 'https://copilot.microsoft.com/';
-          
-          
-        }  else if (option==="Mistral") {
-          window.location.href = 'https://chat.mistral.ai/chat';
+          }else if (option==="deepseek") {
+              window.location.href = 'https://www.deepseek.com/';
+    
+          }else if (option==="Gemini1.5 (solo PC)") {
+            window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
            
-        }else if (option==="Gemini") {
-          window.location.href = 'https://bard.google.com/?hl=es';
-           
-        }else if (option==="Groq") {
-          "window.location.href = 'https://www.llama2.ai/';"
-          window.location.href = 'https://console.groq.com/playground';
-           
-        }else if (option==="CodeLlama") {
-          window.location.href = 'https://labs.perplexity.ai/';
-           
-        }else if (option==="ChatPDF") {
-          window.location.href = 'https://chatwithpdf.ai/';
-           
-        }else if (option==="GPT") {
-          window.location.href = 'https://gpt.h2o.ai/?hp=chat&utm_source=h2o.ai&utm_medium=referral&utm_campaign=h2o-home-page-plg&_ga=2.2391152.1734232450.1694226193-377963146.1693494970';
-           
-        }else if (option==="ChatPDF2") {
-          window.location.href = 'https://chatwithpdf.ai/';
-  
-        }  else if (option==="OpenA") {
-          window.location.href = 'https://open-assistant.io/dashboard';
-  
-        }else if (option==="GPTnbx") {
-            window.location.href = 'https://chat.nbox.ai/';
-           
-        }else if (option==="Inflection") {
-          window.location.href = 'https://pi.ai/discover';
-
-  
-        }else if (option==="Gemini1.5 (solo PC)") {
-          window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
-         
-      }else {
-          contador=o;
-          alert("No selecciono ninguna de las alternativas");
-        }
-      };
+        }else {
+            contador=o;
+            alert("No selecciono ninguna de las alternativas");
+          }
+        };
 
     const handleLinkChange = (selectedLink) => {
         setLinkOption(selectedLink);
@@ -159,57 +161,88 @@ const Home = () => {
     ];
 
     const cards3 = [
-      {
-          id: 1,
-          title: "Evita la censura",
-          text: "Utiliza navegadores y plataformas centrados en la privacidad, como Tor o DuckDuckGo, que integran VPNs y protegen activamente tu información personal. Estas herramientas están diseñadas para priorizar tu seguridad en línea y mantener tu privacidad en todo momento.",
-          image: noticia1,
-      },
-      {
-        id: 2,
-        title: "Portal de Noticias de IA",
-        text: (
-            <>
-                Actualizate en los desarrollos, implementaciones, modelos y todo lo que tiene que ver con el mundo del machine learning en el portal deeplearning.ia que se encuentra en el siguiente enlace:{" "}
-                <a href="https://www.deeplearning.ai/the-batch/" target="_blank" rel="noopener noreferrer">
-                    Noticias IA
-                </a>.
-            </>
-        ),
-        image: noticia5,
-    },
-      {
-          id: 3,
-          title: "Recomendación para tratar imágenes",
-          text: "Quieres mejorar la resolución de tus imágenes busca pixelcut.ai la cual te ayuda a aumentar la resolución en segundos y si lo que quieres es quitar el fondo usa remove.bg",
-          image: noticia2,
-      },
-      {
-          id: 4,
-          title: "Artifacts de Claude",
-          text: "Artifacts de Claude permite generar programas con tan solo una descripción. Para ingresar tienes que hacer uso de buscadores como el de Duck Duck Go o usar VPN seguras. Es una herramienta muy útil si necesitas un programa rápido que haga una tarea específica.",
-          image: noticia3,
-      },
-      {
-          id: 5,
-          title: "Pez Argento en character.ai",
-          text: (
-              <>
-                  ¿Algo te incomoda y quieres hablar? Habla con el Pez Argento, amigo de Coraje. Seguro te dará un gran consejo. Puedes hablar con él en este enlace:{" "}
-                  <a href="https://character.ai/chat/qfT15B9lrHeRHYN0eK0dLKMPwc4d6qLV0AH8yDJh3-A" target="_blank" rel="noopener noreferrer">
-                      Pez Argento en character.ai
-                  </a>.
-              </>
-          ),
-          image: noticia4,
-      },
-  ];
+        {
+            id: 1,
+            title: "Evita la censura",
+            text: "Utiliza navegadores y plataformas centrados en la privacidad, como Tor o DuckDuckGo, que integran VPNs y protegen activamente tu información personal. Estas herramientas están diseñadas para priorizar tu seguridad en línea y mantener tu privacidad en todo momento.",
+            image: noticia1,
+        },
+        {
+            id: 2,
+            title: "Portal de Noticias de IA",
+            text: (
+                <>
+                    Actualízate en los desarrollos, implementaciones, modelos y todo lo que tiene que ver con el mundo del machine learning en el portal deeplearning.ia que se encuentra en el siguiente enlace:{" "}
+                    <a href="https://www.deeplearning.ai/the-batch/" target="_blank" rel="noopener noreferrer">
+                        Noticias IA
+                    </a>.
+                </>
+            ),
+            image: noticia5,
+        },
+        {
+            id: 3,
+            title: "Recomendación para tratar imágenes",
+            text: "Quieres mejorar la resolución de tus imágenes busca pixelcut.ai la cual te ayuda a aumentar la resolución en segundos y si lo que quieres es quitar el fondo usa remove.bg",
+            image: noticia2,
+        },
+        {
+            id: 4,
+            title: "Artifacts de Claude",
+            text: "Artifacts de Claude permite generar programas con tan solo una descripción. Para ingresar tienes que hacer uso de buscadores como el de Duck Duck Go o usar VPN seguras. Es una herramienta muy útil si necesitas un programa rápido que haga una tarea específica.",
+            image: noticia3,
+        },
+        {
+            id: 5,
+            title: "Pez Argento en character.ai",
+            text: (
+                <>
+                    ¿Algo te incomoda y quieres hablar? Habla con el Pez Argento, amigo de Coraje. Seguro te dará un gran consejo. Puedes hablar con él en este enlace:{" "}
+                    <a href="https://character.ai/chat/qfT15B9lrHeRHYN0eK0dLKMPwc4d6qLV0AH8yDJh3-A" target="_blank" rel="noopener noreferrer">
+                        Pez Argento en character.ai
+                    </a>.
+                </>
+            ),
+            image: noticia4,
+        },
+    ];
+
+    const privacyPolicies = [
+        {
+            platform: "Políticas de Privacidad 10-1-2025 OpenAI",
+            description: "Los usuarios conservan los derechos del input y son propietarios del output, pero OpenAI puede utilizar el contenido para mejorar servicios. Opt-out disponible para entrenamiento. Recopilación de datos incluye input, output, uso y métricas técnicas."
+        },
+        {
+            platform: "Políticas de Privacidad 10-1-2025 Anthropic",
+            description: "Los usuarios son responsables de su input y output. Anthropic asigna derechos de los outputs al usuario. No se utiliza el contenido para entrenamiento, salvo consentimiento o revisión de seguridad. Recopila datos proporcionados por el usuario y feedback."
+        },
+        {
+            platform: "Políticas de Privacidad 10-1-2025 Microsoft Copilot",
+            description: "Los usuarios son responsables de inputs y outputs, que pueden usarse para mejorar servicios. Existen planes pagos para NO usar información organizacional para entrenar modelos."
+        },
+        {
+            platform: "Políticas de Privacidad 10-1-2025 DeepSeek",
+            description: "Los usuarios conservan la propiedad de sus datos y outputs y deben garantizar que no violan la ley. TODA la información cargada puede utilizar datos para mejorar los modelos y servicio. Usa datos en contextos definidos, respetando acuerdos legales."
+        },
+        {
+            platform: "Políticas de Privacidad 10-1-2025 Mistral AI",
+            description: "Los usuarios conservan la propiedad de sus datos y outputs, pero deben garantizar que no violan la ley. No usa la información cargada ni la generada para entrenar modelos sin aviso."
+            
+        },
+        {
+            platform: "Políticas de Privacidad 10-1-2025 Google",
+            description: "Los usuarios conservan la propiedad del contenido, pero Google puede usarlo para mejorar servicios. Uso para Entrenamiento: Utiliza contenido para personalizar y mejorar servicios. Recopilación de Datos: Recopila datos de uso, feedback, input y output, respetando la privacidad y limitaciones legales."
+        },
+        {
+            platform: "Recomendación",
+            description: "Se recomienda revisar y leer completo los términos y condiciones de todos los modelos que uses y monitorear si puedes usarlo bajo sus condiciones."
+        }
+    ];
 
     return (
         <div className="home-container">
             <header className="header">
                 <Navbar />
-                
                 <img src={logoN} className="App-logo" alt="logo" />
                 <h3>IA SIN NECESIDAD</h3>
                 <EfectoDesencriptarTexto
@@ -220,30 +253,50 @@ const Home = () => {
                     randCar={null}
                 />
             </header>
-            
+
             <main className="main-content">
-            <section className="section-about" id="Inicio">   
-            
-                <form onSubmit={handleSubmit} className="form">
-                    <h4>Selecciona la plataforma con la que quieres consultar</h4>
-                    <Select options={options} onChange={(e) => setOption(e.value)} className="select" />
-                    <button type="submit" className="submit-button">Enviar</button>
-                    <p>Cada una de las alternativas puede cambiar sus políticas de uso.</p>
-                    <h6>Herramientas adicionales:</h6>
-                    <Select options={linkOptions} onChange={handleLinkChange} className="select" />
-                    
-                </form>
-                
+                <section className="section-about" id="Inicio">
+                    <form onSubmit={handleSubmit} className="form">
+                        <h4>Selecciona la plataforma con la que quieres consultar</h4>
+                        <Select
+                            options={options}
+                            onChange={(e) => setOption(e.value)}
+                            className="select"
+                            placeholder="Elige una opción"
+                        />
+                        <button type="submit" className="submit-button">Enviar</button>
+                        <p>Cada una de las alternativas puede cambiar sus políticas de uso.</p>
+                        <h6>Herramientas adicionales:</h6>
+                        <Select
+                            options={linkOptions}
+                            onChange={handleLinkChange}
+                            className="select"
+                            placeholder="Elige una herramienta"
+                        />
+                    </form>
                 </section>
 
-                <section className="section-about" id="TiposIA"> 
-                <h4>Tipos de IA disponibles</h4>
-                
-                <Carousel className="carousel">
-                    {cards.map(({ id, title, text, image }) => (
-                        <Card key={id} imageSource={image} title={title} text={text} />
-                    ))}
-                </Carousel>
+                <div className="margen">
+                {/* Nueva sección de políticas de privacidad en un carrusel */}
+                <section className="section-about" id="Politicas">
+                    <Carousel className="carousel">
+                        {privacyPolicies.map((policy, index) => (
+                            <div key={index} className="privacy-item">
+                                <h5>{policy.platform}</h5>
+                                <p>{policy.description}</p>
+                            </div>
+                        ))}
+                    </Carousel>
+                </section>
+                </div>
+
+                <section className="section-about" id="TiposIA">
+                    <h4>Tipos de IA disponibles</h4>
+                    <Carousel className="carousel">
+                        {cards.map(({ id, title, text, image }) => (
+                            <Card key={id} imageSource={image} title={title} text={text} />
+                        ))}
+                    </Carousel>
                 </section>
 
                 <h4>Mejora tu experiencia</h4>
@@ -251,21 +304,22 @@ const Home = () => {
                     <Card2 key={id} title={title} text={text} text2={text2} text3={text3} text4={text4} text5={text5} text6={text6} />
                 ))}
 
-                <section className="section-about" id="Noticias"> 
-                <h4>Recursos y noticias</h4>
-                <Carousel className="carousel">
+
+                <div className="margen">
+                <section className="section-about" id="Noticias">
+                    <h4>Recursos y noticias</h4>
+                    <Carousel className="carousel">
                     {cards3.map(({ id, title, text, image }) => (
                         <Card key={id} imageSource={image} title={title} text={text} />
                     ))}
-                </Carousel>
+                    </Carousel>
                 </section>
+                </div>
+                
             </main>
-            <p>
-            <a href="https://www.camel-ai.org/agent" target="_blank" rel="noopener noreferrer">.</a>
-            </p>
+
             <Footer />
         </div>
-
     );
 };
 

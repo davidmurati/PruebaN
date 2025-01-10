@@ -1,37 +1,62 @@
+/* Estilos base para las tarjetas */
 .card:hover {
-    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
-    transition: all 0.7s linear;
-    
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  transition: all 0.7s linear;
+}
+
+.card.text-center.bg-dark.animate_animated.animate_fadelnUp {
+  background-color: #3f3a44;
+  margin: 0;
+}
+
+.card-body {
+  padding: 2rem 0 !important;
+  background-color: #3f3a44;
+}
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.8);
+}
+
+/* Media query para pantallas de hasta 800px */
+@media (max-width: 800px) {
+  .card:hover {
+    box-shadow: 3px 6px 10px 1px rgba(255, 255, 255, 0.273) !important; /* Reduce la sombra en hover */
   }
 
-  .card.text-center.bg-dark.animate_animated.animate_fadelnUp{
-  
-    background-color: #3f3a44;
-    margin: 0px;
-    
+  .card.text-center.bg-dark.animate_animated.animate_fadelnUp {
+    margin: 0; /* Asegura que no haya margen adicional */
   }
-  
+
   .card-body {
-    padding: 2rem 0 !important;
-    background-color: #3f3a44;
-    
+    padding: 1rem 0 !important; /* Reduce el padding en pantallas pequeñas */
   }
-  
+
   .card-text {
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
-    text-align: left;
+    padding: 0.3rem 0.5rem; /* Reduce el padding del texto */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
   }
-  
-  .overflow {
-    overflow: hidden;
-  }
-  
+
   .card-img-top {
-    transform: scale(1);
-    transition: all 0.2s ease-in-out;
+    transform: scale(1); /* Mantiene la escala inicial */
   }
-  
+
   .card-img-top:hover {
-    transform: scale(1.8);
+    transform: scale(1.5); /* Reduce el efecto de escala en hover para pantallas pequeñas */
   }
+}

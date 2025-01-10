@@ -56,7 +56,30 @@ main {
   box-sizing: border-box;
 }
 
-/* Button styles */
+
+button[type="submit"]:hover {
+  background-color: #e76d0e;
+}
+
+.select {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+/* Estilos para el segundo selector (ajustes específicos) */
+.selector .react-select__control {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+}
+
+/* Estilos para el menú desplegable del selector */
+.selector .react-select__menu {
+  width: 100%;
+  max-width: 400px;
+}
+
 button[type="submit"] {
   background-color: #f88213;
   color: white;
@@ -70,20 +93,6 @@ button[type="submit"] {
   width: 100%;
   margin: 20px; /* Añade espacio superior */
   letter-spacing: 1px; /* Ajusta la distancia entre letras */
-}
-
-button[type="submit"]:hover {
-  background-color: #e76d0e;
-}
-
-/* Select styles */
-.selector .react-select__control {
-  margin-top: 15px; /* Añade espacio superior */
-  width: 100%;
-  max-width: 180px;
-  border-radius: 12px;
-  
-  
 }
 
 
@@ -119,7 +128,7 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: flex-start;
   min-width: 300px;
-  max-width: 100px;
+  max-width: 400px;
   
 }
 
@@ -127,8 +136,11 @@ button[type="submit"]:hover {
 h2, h3, h4, h5, h6 {
   color: #f88213;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
+
+
+
 
 p {
   text-align: justify;
@@ -146,6 +158,41 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   
 }
+
+.privacy-item {
+  background-color: #3f3a44;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 5px;
+}
+
+.privacy-item h5 {
+  color: #f88213;
+  margin-bottom: 10px;
+}
+
+.privacy-item p {
+  color: #7c7c7c;
+  line-height: 1.6;
+}
+
+
+.card, .card2, .card3, .card4, .card5, .carousel {
+  padding: 0px;
+  margin-bottom: 0px;
+  max-width: 800px;
+  
+}
+
+.margen {
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  padding: 15px; /* Ajusta el padding según sea necesario */
+ 
+}
+
+
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -235,7 +282,7 @@ p {
   .selector .react-select__control {
       margin-top: 10px;
       padding: 5px;
-      max-width: 350px;
+      max-width: 300px;
   }
 }
 
@@ -273,20 +320,20 @@ p {
 
 @media (max-width: 320px) {
   body {
-      margin: 10px;
+      margin: 5px;
       min-height: calc(100vh - 20px);
       max-width: 250px;
   }
 
   form {
-      padding: 10px;
+      padding: 5px;
       margin: 0px;
       max-width: 250px;
       margin-bottom: 10px;
   }
 
   .card, .card2, .card3, .card4, .card5, .carousel {
-      padding: 10px;
+      padding: 5px;
       margin-bottom: 10px;
       max-width: 250px;
       
@@ -294,7 +341,7 @@ p {
 
   h2, h3, h4, h5, h6 {
       font-size: 90%;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
   }
 
   p {
@@ -309,7 +356,7 @@ p {
   .selector .react-select__control {
       margin-top: 5px;
       padding: 5px;
-      max-width: 250px;
+      max-width: 200px;
   }
 
   .carousel .slide img {
