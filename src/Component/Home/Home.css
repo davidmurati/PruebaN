@@ -288,34 +288,50 @@ p {
 
 @media (max-width: 480px) {
   .App-logo {
-    max-width: 250px;
+    max-width: 310px;
 }
 
-  .card, .card2, .card3, .card4, .card5, .carousel {
-      padding: 10px;
-      max-width: 320px;
-  }
+.card, .card2, .card3, .card4, .card5, .carousel {
+    padding: 10px;
+    max-width: 310px;
+}
 
-  .carousel .slide img {
-      max-height: 150px;
-      max-width: 280px;
-  }
+.carousel .slide img {
+    max-height: 150px;
+    max-width: 280px;
+}
 
-  form {
+form {
     margin: 0px;
     margin-bottom: 10px;
-  }
+    max-width: 310px;
+}
 
-  button[type="submit"] {
-      padding: 10px 20px;
-      font-size: 14px;
-  }
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+}
 
-  .selector .react-select__control {
-      margin-top: 10px;
-      padding: 5px;
-      max-width: 350px;
-  }
+button[type="submit"] {
+  background-color: #f88213;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  max-width: 180px;
+  width: 100%;
+  margin: 20px; /* Añade espacio superior */
+  letter-spacing: 1px; /* Ajusta la distancia entre letras */
+}
+
+.selector .react-select__control {
+    margin-top: 10px;
+    padding: 5px;
+    max-width: 310px;
+}
 }
 
 @media (max-width: 320px) {

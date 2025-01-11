@@ -317,8 +317,9 @@ const Home = () => {
                 </div>
                 
             </main>
-
+            <div className="margen">
             <Footer />
+            </div>
         </div>
     );
 };
