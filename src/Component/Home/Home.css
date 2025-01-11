@@ -292,7 +292,7 @@ p {
 }
 
 .card, .card2, .card3, .card4, .card5, .carousel {
-    padding: 10px;
+    
     max-width: 310px;
 }
 
@@ -329,7 +329,7 @@ button[type="submit"] {
 
 .selector .react-select__control {
     margin-top: 10px;
-    padding: 5px;
+    
     max-width: 310px;
 }
 }
