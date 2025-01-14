@@ -1,382 +1,483 @@
-body {
-  font-family: 'PT Sans', Verdana, sans-serif;
-  background-color: #ddcaf3;
-  background-color:#202020;
-  color: #202020;
-  margin: 20px;
+/* Base styles */
+.home-container {
+  max-width: 100%;
+  margin: 0 auto;
   padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #3f3a44;
+  background: linear-gradient(135deg, #131313, #3f3a44);
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 40px);
-  overflow-x: hidden;
-  letter-spacing: 0.5px; /* Ajusta la distancia entre letras */
+  height: flex;
+ 
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #131313, #3f3a44); /* Agrega el color de fondo */
+
+}
+
+/* Header styles */
+.header {
+  background: linear-gradient(135deg, #131313, #252425);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #f87325;
+  position: relative;
+}
+
+.App-logo {
+  max-width: 200px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+/* Animation for logo */
+@keyframes logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.App-logo {
+  animation: logo-float 3s ease-in-out infinite;
+}
+
+.header h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: flex;
+}
+
+/* Section styles */
+.section-about {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Form styles */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #e2e1e2;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  height: flex;
 }
 
-/* Logo container styles */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  
-  width: 120%;
+.form h4 {
+  color: #f87325;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-/* Logo styles */
-.App-logo {
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  
+.form h6 {
+  color: #f87325;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.1rem;
 }
 
-/* Main styles */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-
-button[type="submit"]:hover {
-  background-color: #e76d0e;
-}
-
+/* Select styles */
 .select {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px 0;
+  margin-bottom: 1rem;
 }
 
-/* Estilos para el segundo selector (ajustes específicos) */
-.selector .react-select__control {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px 0;
+.select__control {
+  border: 2px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  min-height: 48px !important;
 }
 
-/* Estilos para el menú desplegable del selector */
-.selector .react-select__menu {
-  width: 100%;
-  max-width: 400px;
+.select__control:hover {
+  border-color: #f87325 !important;
 }
 
-button[type="submit"] {
-  background-color: #f88213;
+.select__control--is-focused {
+  box-shadow: 0 0 0 1px #f87325 !important;
+  border-color: #f87325 !important;
+}
+
+/* Button styles */
+.submit-button {
+  width: 200px;
+  padding: 0.8rem;
+  background-color: #f87325;
   color: white;
-  padding: 12px 24px;
   border: none;
-  border-radius: 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 16px;
-  max-width: 180px;
-  width: 100%;
-  margin: 20px; /* Añade espacio superior */
-  letter-spacing: 1px; /* Ajusta la distancia entre letras */
 }
 
+.submit-button:hover {
+  background-color: #f87325;
+}
 
 /* Card styles */
-.card, .card2, .card3, .card4, .card5 {
-  
-  
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #3f3a44;
-  
+.card {
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+  height: 100%;
 }
 
-.div.card.text-center.bg-dark.animate_animated.animate_fadelnUp{
-  
-  background-color: #3f3a44;
-  margin: 0px;
-  
+.card:hover {
+  transform: translateY(-5px);
 }
 
-/* Evitar cambio de tamaño al hover */
-.card:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
-  transform: none; /* Asegura que no haya transformación */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Container styles */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-  min-width: 300px;
-  max-width: 400px;
-  
-}
-
-/* Typography */
-h2, h3, h4, h5, h6 {
-  color: #f88213;
-  font-weight: bold;
-  margin-bottom: 2px;
-}
-
-
-
-
-p {
-  text-align: justify;
-  color: #1f1e1e;
-  line-height: 1.6;
+.card-content {
+  padding: 1.5rem;
 }
 
 /* Carousel styles */
-.carousel .slide img {
+/* Carousel styles - Updated */
+.carousel {
+  margin: 2rem 0;
   width: 100%;
-  height: auto;
-  max-height: 350px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  
+  position: relative;
+
 }
 
+.carousel .control-dots {
+  margin: 1rem 0;
+  position:relative;
+  bottom: 0;
+  display: none;
+}
+
+/* Privacy Items in Carousel */
 .privacy-item {
-  background-color: #3f3a44;
-  padding: 20px;
+  padding: 2rem;
+  background: #f8f9fa;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  margin: 5px;
-}
-
-.privacy-item h5 {
-  color: #f88213;
-  margin-bottom: 10px;
-}
-
-.privacy-item p {
-  color: #7c7c7c;
-  line-height: 1.6;
-}
-
-
-.card, .card2, .card3, .card4, .card5, .carousel {
-  padding: 0px;
-  margin-bottom: 0px;
-  max-width: 800px;
-  
-}
-
-.margen {
-  margin: 20px; /* Ajusta el margen según sea necesario */
-  padding: 15px; /* Ajusta el padding según sea necesario */
+  margin: 1rem auto;
+  max-width: 90%;
  
 }
 
-
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-
-  .App-logo {
-      max-width: 300px;
-  }
-
-  
-  button[type="submit"] {
-    background-color: #f88213;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    max-width: 180px;
-    width: 100%;
-    margin: 20px; /* Añade espacio superior */
-    letter-spacing: 1px; /* Ajusta la distancia entre letras */
-  }
-
-  .selector .react-select__control {
-      max-width: 100%;
-  }
-
-  .card, .card2, .card3, .card4, .card5 {
-      padding: 15px;
-  }
-
-  .carousel .slide img {
-      max-height: 200px;
-  }
-
-  form {
-      margin: 0px;
-      margin-bottom: 10px;
-      
-  }
-
-   
-
+.privacy-item h5 {
+  color: #f87325;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-@media (max-width: 700px) {
-  .App-logo {
-      max-width: 250px;
+.privacy-item p {
+  text-align: left;
+  line-height: 1.6;
+  margin:0px;
+  font-size: 1rem;
+}
+
+/* Card styles in carousel - Updated */
+.card {
+  background: #3f3a44;
+  transition: transform 0.3s ease;
+  height: flex;
+  margin: 20px;
+  
+  max-width: 90%;
+  
+}
+
+.card3 {
+  background: #3f3a44;
+  transition: transform 0.3s ease;
+  min-height: 400px;
+  margin: 20px;
+  
+  max-width: 90%;
+  
+}
+
+.card2 {
+  background: #13131300;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: auto;
+  margin: 20px;
+  max-width: 90%;
+  
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card-content h5 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+h2{
+  color: #f0efef;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px ;
+  color: #f87325;
+  text-align: center;
+  text-align: center;
+  
+}
+
+h5{
+  font-size: 20px ;
+  color: #f87325;
+  text-align: center;
+  text-align: center;
+  
+}
+
+p{
+  
+  color: #f0efef;
+  text-align: center;
+  text-align: center;
+  font-family: 'PT Sans', Verdana, sans-serif;
+}
+
+.boton[type="submit"] {
+  background-color: #f87325;
+  align-items: center;
+  width: 50%;
+  height: 20%;
+  max-width: 200px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header h3 {
+    font-size: 1.5rem;
   }
 
-  .card, .card2, .card3, .card4, .card5, .carousel {
-      padding: 10px;
-      max-width: 350px;
+  .section-about {
+    padding: 1rem;
+    margin: 1rem 0;
   }
 
-  .carousel .slide img {
-      max-height: 150px;
-      max-width: 280px;
+  .privacy-item {
+    padding: 1rem;
+    min-height: 150px;
   }
 
-  form {
-      margin: 0px;
-      margin-bottom: 10px;
-  }
-
-  button[type="submit"] {
-      padding: 10px 20px;
-      font-size: 14px;
-  }
-
-  button[type="submit"] {
-    background-color: #f88213;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-    max-width: 180px;
-    width: 100%;
-    margin: 20px; /* Añade espacio superior */
-    letter-spacing: 1px; /* Ajusta la distancia entre letras */
-  }
-
-  .selector .react-select__control {
-      margin-top: 10px;
-      padding: 5px;
-      max-width: 300px;
+  .card img {
+    height: 150px;
   }
 }
 
 @media (max-width: 480px) {
+  /* Ajustes del contenedor principal */
+  .home-container {
+    overflow-x: hidden; /* Previene scroll horizontal */
+  }
+
+  p{
+  
+    font-size: 0.9rem;
+  }
+
+  h5{
+  
+    font-size: 0.9rem;
+  }
+
+
+  /* Header ajustado */
+  .header {
+    padding: 0.8rem 0.5rem;
+  }
+
   .App-logo {
-    max-width: 250px;
-}
-
-.card, .card2, .card3, .card4, .card5, .carousel {
-    
-    max-width: 280px;
-}
-
-.carousel .slide img {
-    max-height: 150px;
-    max-width: 280px;
-}
-
-form {
-    margin: 0px;
-    margin-bottom: 10px;
-    max-width: 280px;
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-button[type="submit"] {
-  background-color: #f88213;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
-  max-width: 180px;
-  width: 100%;
-  margin: 20px; /* Añade espacio superior */
-  letter-spacing: 1px; /* Ajusta la distancia entre letras */
-}
-
-.selector .react-select__control {
-    margin-top: 10px;
-    
-    max-width: 280px;
-}
-}
-
-@media (max-width: 320px) {
-  body {
-      margin: 5px;
-      min-height: calc(100vh - 20px);
-      max-width: 250px;
+    max-width: 120px;
+    margin: 0.5rem auto;
   }
 
-  form {
-      padding: 5px;
-      margin: 0px;
-      max-width: 250px;
-      margin-bottom: 10px;
+  .header h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
   }
 
-  .card, .card2, .card3, .card4, .card5, .carousel {
-      padding: 5px;
-      margin-bottom: 10px;
-      max-width: 250px;
-      
+  /* Contenido principal */
+  .main-content {
+    padding: 0.5rem;
   }
 
-  h2, h3, h4, h5, h6 {
-      font-size: 90%;
-      margin-bottom: 5px;
+  .section-about {
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border-radius: 8px;
   }
 
-  p {
-      font-size: 90%;
+  /* Ajustes del formulario */
+  .form {
+    padding: 0.5rem 0;
   }
 
-  button[type="submit"] {
-      padding: 8px 16px;
-      font-size: 14px;
+  .form h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 
-  .selector .react-select__control {
-      margin-top: 5px;
-      padding: 5px;
-      max-width: 200px;
+  .form h6 {
+    font-size: 0.9rem;
+    margin: 1rem 0 0.5rem;
   }
 
-  .carousel .slide img {
-      max-height: 120px;
-      max-width: 250px;
+  /* Ajustes del Select */
+  .select__control {
+    min-height: 40px !important;
   }
+
+  /* Ajustes específicos del Carrusel */
+  .carousel {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .carousel .slider-wrapper {
+    margin: 0;
+  }
+
+  .carousel .slide {
+    padding: 0;
+  }
+
+  
+  .carousel .control-dots {
+    margin: 5px 0;
+  }
+
+  .carousel .dot {
+    width: 6px !important;
+    height: 6px !important;
+    margin: 0 3px !important;
+  }
+
+  /* Ajustes de las cards en el carrusel */
+  .card {
+    margin: 0 auto;
+    max-width: 95%;
+    height: auto;
+    transform: none !important;
+  }
+
+  .card2 {
+    margin: 0 auto;
+    max-width: 95%;
+    height: auto;
+    transform: none !important;
+  }
+
+  .card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .card img {
+    height: 180px;
+    padding: 0.5rem;
+    object-fit: contain;
+  }
+
+  .card-content {
+    padding: 1rem 0.8rem;
+  }
+
+  .card-content h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Ajustes de los items de privacidad */
+  .privacy-item {
+    padding: 1rem 0.8rem;
+    margin: 0.3rem auto;
+    max-width: 95%;
+    min-height: auto;
+  }
+
+  .privacy-item h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .privacy-item p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  /* Desactivar animaciones en móvil */
+  .App-logo {
+    animation: none;
+  }
+
+  /* Ajustes del botón */
+  .submit-button {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Ajustes para prevenir problemas de scroll horizontal */
+.carousel .slider-wrapper,
+.carousel .slider,
+.carousel .slide {
+  max-width: 100vw !important;
+}
+
+/* Asegurar que las imágenes no causen desbordamiento */
+img {
+  max-width: 100%;
+  height: auto;
 }

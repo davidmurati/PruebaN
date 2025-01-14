@@ -38,7 +38,7 @@ const Home = () => {
         { value: 'Inflection', label: 'Inflection' },
         { value: 'GPTnbx', label: 'GPTnbx' },
         { value: 'deepseek', label: 'deepseek' },
-        { value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5 (solo PC)' }
+        { value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5 (solo PC)' },
     ];
 
     const linkOptions = [
@@ -209,28 +209,28 @@ const Home = () => {
 
     const privacyPolicies = [
         {
-            platform: "Políticas de Privacidad 10-1-2025 OpenAI",
+            platform: "OpenAI 10-1-2025 ",
             description: "Los usuarios conservan los derechos del input y son propietarios del output, pero OpenAI puede utilizar el contenido para mejorar servicios. Opt-out disponible para entrenamiento. Recopilación de datos incluye input, output, uso y métricas técnicas."
         },
         {
-            platform: "Políticas de Privacidad 10-1-2025 Anthropic",
+            platform: "Anthropic 10-1-2025 ",
             description: "Los usuarios son responsables de su input y output. Anthropic asigna derechos de los outputs al usuario. No se utiliza el contenido para entrenamiento, salvo consentimiento o revisión de seguridad. Recopila datos proporcionados por el usuario y feedback."
         },
         {
-            platform: "Políticas de Privacidad 10-1-2025 Microsoft Copilot",
+            platform: "Microsoft Copilot 10-1-2025 ",
             description: "Los usuarios son responsables de inputs y outputs, que pueden usarse para mejorar servicios. Existen planes pagos para NO usar información organizacional para entrenar modelos."
         },
         {
-            platform: "Políticas de Privacidad 10-1-2025 DeepSeek",
+            platform: "DeepSeek 10-1-2025 ",
             description: "Los usuarios conservan la propiedad de sus datos y outputs y deben garantizar que no violan la ley. TODA la información cargada puede utilizar datos para mejorar los modelos y servicio. Usa datos en contextos definidos, respetando acuerdos legales."
         },
         {
-            platform: "Políticas de Privacidad 10-1-2025 Mistral AI",
+            platform: "Mistral AI 10-1-2025 ",
             description: "Los usuarios conservan la propiedad de sus datos y outputs, pero deben garantizar que no violan la ley. No usa la información cargada ni la generada para entrenar modelos sin aviso."
             
         },
         {
-            platform: "Políticas de Privacidad 10-1-2025 Google",
+            platform: "Google 10-1-2025 ",
             description: "Los usuarios conservan la propiedad del contenido, pero Google puede usarlo para mejorar servicios. Uso para Entrenamiento: Utiliza contenido para personalizar y mejorar servicios. Recopilación de Datos: Recopila datos de uso, feedback, input y output, respetando la privacidad y limitaciones legales."
         },
         {
@@ -255,7 +255,7 @@ const Home = () => {
             </header>
 
             <main className="main-content">
-                <section className="section-about" id="Inicio">
+                <section className="card3" id="Inicio">
                     <form onSubmit={handleSubmit} className="form">
                         <h4>Selecciona la plataforma con la que quieres consultar</h4>
                         <Select
@@ -264,8 +264,8 @@ const Home = () => {
                             className="select"
                             placeholder="Elige una opción"
                         />
-                        <button type="submit" className="submit-button">Enviar</button>
-                        <p>Cada una de las alternativas puede cambiar sus políticas de uso.</p>
+                        <button type="boton" className="submit-button">Enviar</button>
+                        
                         <h6>Herramientas adicionales:</h6>
                         <Select
                             options={linkOptions}
@@ -273,24 +273,25 @@ const Home = () => {
                             className="select"
                             placeholder="Elige una herramienta"
                         />
+                        
+                    <p>Cada una de las alternativas puede cambiar sus políticas de uso.</p>
                     </form>
+                    
                 </section>
 
-                <div className="margen">
-                {/* Nueva sección de políticas de privacidad en un carrusel */}
-                <section className="section-about" id="Politicas">
+                <h4>Políticas de Privacidad</h4>
+                <div className="card" id="Politicas">
                     <Carousel className="carousel">
                         {privacyPolicies.map((policy, index) => (
-                            <div key={index} className="privacy-item">
+                            <div key={index} className="sincard">
                                 <h5>{policy.platform}</h5>
                                 <p>{policy.description}</p>
                             </div>
                         ))}
                     </Carousel>
-                </section>
                 </div>
 
-                <section className="section-about" id="TiposIA">
+                <section className="card2" id="TiposIA">
                     <h4>Tipos de IA disponibles</h4>
                     <Carousel className="carousel">
                         {cards.map(({ id, title, text, image }) => (
@@ -299,14 +300,16 @@ const Home = () => {
                     </Carousel>
                 </section>
 
+                <div className="card2" > 
                 <h4>Mejora tu experiencia</h4>
                 {cards2.map(({ id, title, text, text2, text3, text4, text5, text6 }) => (
                     <Card2 key={id} title={title} text={text} text2={text2} text3={text3} text4={text4} text5={text5} text6={text6} />
                 ))}
+               </div>
 
 
-                <div className="margen">
-                <section className="section-about" id="Noticias">
+                
+                <section className="card2" id="Noticias">
                     <h4>Recursos y noticias</h4>
                     <Carousel className="carousel">
                     {cards3.map(({ id, title, text, image }) => (
@@ -314,12 +317,12 @@ const Home = () => {
                     ))}
                     </Carousel>
                 </section>
-                </div>
+                
                 
             </main>
-            <div className="margen">
+           
             <Footer />
-            </div>
+            
         </div>
     );
 };

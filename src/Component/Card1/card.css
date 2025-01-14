@@ -4,6 +4,12 @@
   transition: all 0.7s linear;
 }
 
+.card img {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacios no deseados debajo de la imagen */
+}
+
 .card.text-center.bg-dark.animate_animated.animate_fadelnUp {
   background-color: #3f3a44;
   margin: 0;
