@@ -287,7 +287,7 @@ const Home = () => {
                 <div className="card" id="Politicas">
                     <Carousel className="carousel">
                         {privacyPolicies.map((policy, index) => (
-                            <div key={index} className="sincard">
+                            <div key={index} className="carousel">
                                 <h5>{policy.platform}</h5>
                                 <p>{policy.description}</p>
                             </div>

@@ -4,6 +4,7 @@
   transition: all 0.7s linear;
 }
 
+
 .card img {
   max-width: 100%; /* La imagen no superará el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
