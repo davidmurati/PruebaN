@@ -22,7 +22,7 @@ body {
 
 /* Header styles */
 .header {
-  background: linear-gradient(135deg, #131313, #252425);
+  background: linear-gradient(135deg, #13131300, #16161600);
   padding: 2rem 1rem;
   text-align: center;
   color: #f87325;
@@ -151,6 +151,7 @@ body {
 .carousel {
   margin: 2rem 0;
   width: 100%;
+  max-width: 800px;
   position: relative;
   
 
@@ -162,6 +163,15 @@ body {
   bottom: 0;
   display: none;
 }
+
+.carousel .control-arrow {
+  display:flexbox ; /* Oculta las flechas */
+  width: flex;
+  height: flex;
+  max-height: 100%;
+  
+}
+
 
 
 
@@ -195,8 +205,8 @@ body {
   background: #3f3a44;
   transition: transform 0.3s ease;
   
-  margin: 20px;
-  max-width: 90%;
+  margin: 10px;
+  max-width: 100%;
   height: flex;
 }
 
@@ -229,22 +239,6 @@ body {
   object-fit: contain;
   background-color: #f8f9fa;
   padding: 1rem;
-}
-
-.card-content {
-  padding: 1.5rem;
-  text-align: left;
-}
-
-.card-content h5 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.card-content p {
-  line-height: 1.6;
-  margin: 0;
 }
 
 
