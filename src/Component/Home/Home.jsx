@@ -45,6 +45,7 @@ const Home = () => {
     const linkOptions = [
         { value: 'labs.google', label: 'labs google Genera imagenes y musica instrumental', url: 'https://labs.google/fx/es' },
         { value: 'Notebooklm', label: 'Notebooklm (Interactua con tu video o texto)', url: 'https://notebooklm.google.com/' },
+        { value: 'Turboscribe', label: 'Transcriptor de audio (Turboscribe)', url: 'https://turboscribe.ai/' },
         { value: 'Leonardo', label: 'Generador de imagen (Leonardo)', url: 'https://app.leonardo.ai/' },
         { value: 'Playground', label: 'Generador de imagen (Playground)', url: 'https://playground.com/' },
         { value: 'Ideogram', label: 'Generador de imagen con texto (Ideogram)', url: 'https://ideogram.ai/t/explore' },
