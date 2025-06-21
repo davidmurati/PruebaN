@@ -34,12 +34,11 @@ const Home = () => {
         { value: 'Groq', label: 'Groq' },
         { value: 'CodeLlama', label: 'CodeLlama' },
         { value: 'ChatPDF', label: 'ChatPDF' },
-        { value: 'ChatPDF2', label: 'ChatPDF2' },
         { value: 'Inflection', label: 'Inflection' },
-        { value: 'GPTnbx', label: 'GPTnbx' },
+        { value: 'Grok', label: 'Grok' },
         { value: 'deepseek', label: 'deepseek' },
         { value: 'Qwen', label: 'Qwen' },
-        { value: 'Gemini1.5 (solo PC)', label: 'Gemini1.5 (solo PC)' },
+        { value: 'Gemini2.5 (solo PC)', label: 'Gemini2.5 (solo PC)' },
     ];
 
     const linkOptions = [
@@ -55,6 +54,10 @@ const Home = () => {
         { value: 'Elevenlabs', label: 'Generador Voz', url: 'https://elevenlabs.io/' },
         { value: 'Ollama', label: 'Ollama', url: 'https://ollama.com/search' },
         { value: 'Openrouter', label: 'Openrouter', url: 'https://openrouter.ai/' },
+        { value: 'Gamma', label: 'Generador de presentaciones (Gamma)', url: 'https://gamma.app/create' },
+        { value: 'dewatermark', label: 'Quitar marca de agua', url: 'https://dewatermark.ai/es' },
+        { value: 'remove.bg', label: 'Quitar fondo de imagen', url: 'https://www.remove.bg/es/upload' },
+        { value: 'mermaid.js.org', label: 'Generar mapa conceptual (Con codigo)', url: 'https://mermaid.js.org/syntax/flowchart.html' },
         { value: 'Medlm', label: 'Medlm', url: 'https://www.openevidence.com/' }
     ];
 
@@ -96,15 +99,12 @@ const Home = () => {
              
           }else if (option==="GPT") {
             window.location.href = 'https://gpt.h2o.ai/?hp=chat&utm_source=h2o.ai&utm_medium=referral&utm_campaign=h2o-home-page-plg&_ga=2.2391152.1734232450.1694226193-377963146.1693494970';
-             
-          }else if (option==="ChatPDF2") {
-            window.location.href = 'https://chatwithpdf.ai/';
     
           }  else if (option==="OpenA") {
             window.location.href = 'https://open-assistant.io/dashboard';
     
-          }else if (option==="GPTnbx") {
-              window.location.href = 'https://chat.nbox.ai/';
+          }else if (option==="Grok") {
+              window.location.href = 'https://grok.com/';
              
           }else if (option==="Inflection") {
             window.location.href = 'https://pi.ai/discover';
@@ -115,7 +115,7 @@ const Home = () => {
             }else if (option==="Qwen") {
                 window.location.href = 'https://chat.qwenlm.ai/';
     
-          }else if (option==="Gemini1.5 (solo PC)") {
+          }else if (option==="Gemini2.5 (solo PC)") {
             window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
            
         }else {
@@ -135,7 +135,7 @@ const Home = () => {
         {
             id: 1,
             title: "Generador de texto",
-            text: "Dirígete a Codellama, GPTnbx o similares para solucionar tareas. Selecciona el modelo a usar según sea el caso 😎",
+            text: "Dirígete a Codellama, Deepseek o similares para solucionar tareas. Selecciona el modelo a usar según sea el caso 😎",
             image: llama9,
         },
         {
