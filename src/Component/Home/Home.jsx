@@ -38,6 +38,7 @@ const Home = () => {
         { value: 'Grok', label: 'Grok' },
         { value: 'deepseek', label: 'deepseek' },
         { value: 'Qwen', label: 'Qwen' },
+        { value: 'Minimax', label: 'Minimax' },
         { value: 'Gemini2.5 (solo PC)', label: 'Gemini2.5 (solo PC)' },
     ];
 
@@ -114,6 +115,9 @@ const Home = () => {
 
             }else if (option==="Qwen") {
                 window.location.href = 'https://chat.qwenlm.ai/';
+
+            }else if (option==="Minimax") {
+                window.location.href = 'https://chat.minimax.io/';
     
           }else if (option==="Gemini2.5 (solo PC)") {
             window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
