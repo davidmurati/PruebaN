@@ -39,6 +39,7 @@ const Home = () => {
         { value: 'deepseek', label: 'deepseek' },
         { value: 'Qwen', label: 'Qwen' },
         { value: 'Minimax', label: 'Minimax' },
+        { value: 'Kimi', label: 'Kimi' },
         { value: 'Gemini2.5 (solo PC)', label: 'Gemini2.5 (solo PC)' },
     ];
 
@@ -118,6 +119,9 @@ const Home = () => {
 
             }else if (option==="Minimax") {
                 window.location.href = 'https://chat.minimax.io/';
+
+            }else if (option==="Kimi") {
+                window.location.href = 'https://www.kimi.com/';
     
           }else if (option==="Gemini2.5 (solo PC)") {
             window.location.href = 'https://aistudio.google.com/app/prompts/new_chat';
