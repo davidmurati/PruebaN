@@ -59,6 +59,9 @@ const Home = () => {
         { value: 'Gamma', label: 'Generador de presentaciones (Gamma)', url: 'https://gamma.app/create' },
         { value: 'dewatermark', label: 'Quitar marca de agua', url: 'https://dewatermark.ai/es' },
         { value: 'remove.bg', label: 'Quitar fondo de imagen', url: 'https://www.remove.bg/es/upload' },
+        { value: 'kling ai', label: 'Modificar Video', url: 'https://app.klingai.com/global/omni/new' },
+        { value: 'movieflow', label: 'Generar video', url: 'https://movieflow.ai/' },
+        { value: 'Narrar Google', label: 'Generar audio narrado', url: 'https://aistudio.google.com/app/generate-speech' },
         { value: 'mermaid.js.org', label: 'Generar mapa conceptual (Con codigo)', url: 'https://mermaid.js.org/syntax/flowchart.html' },
         { value: 'Medlm', label: 'Medlm', url: 'https://www.openevidence.com/' }
     ];
